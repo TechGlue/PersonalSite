@@ -1,0 +1,27 @@
+{
+  "name": "personalsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build style.css -o ./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TechGlue/PersonalSite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TechGlue/PersonalSite/issues"
+  },
+  "homepage": "https://github.com/TechGlue/PersonalSite#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.15"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.5"
+  }
+}
