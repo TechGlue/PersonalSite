@@ -8,14 +8,27 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
 </head>
 
-<body>
-  <div>
-    <h1 class="text-5xl">Hi, I'm Luís Garcia</h1>
+<body class="font-mono bg-slate-700">
+  <header class="m-10 group text-center align-middle">
+    <h1 class="mb-1 font-mono text-4xl text-gray-100 md:text-6xl">
+      Hi, I'm <br class="block md:hidden" />
+      <span class="inline-flex h-20 pt-2 overflow-x-hidden animate-type whitespace-nowrap text-brand-accent will-change">
+        Luís Garcia👋
+      </span>
+      <span class="box-border inline-block w-1 h-10 ml-2 -mb-2  md:-mb-4 md:h-16 animate-cursor will-change"></span>
+    </h1>
+  </header>
+
+  <div id="img-top">
+    
   </div>
-  <br>
-  <div id="row2">
+
+  <div id="row2" class="text-gray-100 align-middle m-20">
     <p id="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
       dolore magna
       aliqua. Neque vitae tempus quam pellentesque nec nam aliquam. Nam aliquam sem et tortor consequat id porta nibh.
@@ -27,7 +40,7 @@
       sit
       amet venenatis urna cursus. Tincidunt arcu non sodales neque sodales. Fusce ut placerat orci nulla pellentesque
       dignissim enim sit. Ultrices dui sapien eget mi. Id volutpat lacus laoreet non curabitur gravida arcu ac.</p>
-      <br>
+    <br>
     <p id="expandingintro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
       labore et dolore magna
       aliqua. Neque vitae tempus quam pellentesque nec nam aliquam. Nam aliquam sem et tortor consequat id porta nibh.
@@ -39,32 +52,36 @@
       sit
       amet venenatis urna cursus. Tincidunt arcu non sodales neque sodales. Fusce ut placerat orci nulla pellentesque
       dignissim enim sit. Ultrices dui sapien eget mi. Id volutpat lacus laoreet non curabitur gravida arcu ac.</p>
-      <br>
+    <br>
 
     <p>What I like to do in my free time</p>
     <ul class="list-decima">
+      <div id="list-items" class="ml-8">
       <li>Now this is a story all about how, my life got flipped turned upside down</li>
       <li>Now this is a story all about how, my life got flipped turned upside down</li>
       <li>Now this is a story all about how, my life got flipped turned upside down</li>
       <li>Now this is a story all about how, my life got flipped turned upside down</li>
       <!-- ... -->
+      </div>  
     </ul>
   </div>
   <br>
-  <div id="ContactMe">
-    <button>Let's talk?</button>
-  </div>
 
-  <div id="links">
-    <a href="https://github.com/TechGlue">Github</a>
-    <a href="">Handshake</a>
-    <a href="">Linkedln</a>
-    <a href="">Resume</a>
+  <div id="Contacts" class="flex flex-col items-center ">
+    <div id="ContactMe" class="text-gray-100 mb-4">
+      <button>Let's talk?</button>
+    </div>
+  
+    <div id="links" class="grid grid-cols-4 gap-6">
+      <a href="https://github.com/TechGlue">Github</a>
+      <a href="https:google.com">Handshake</a>
+      <a href="https:google.com">Linkldn</a>
+      <a href="">Resume</a>
+    </div>
   </div>
-  <br>
-  <p>@ Copyright by Luís Garcia</p>
-
-  <script src="" async defer></script>
+    
+  <footer class=" text-gray-400 fixed inset-x-0 bottom-0 m-4">@ Copyright Luís Garcia</footer>
+  <script src="scripts/index.js" async defer></script>
 </body>
 
 </html>
