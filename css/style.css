@@ -505,6 +505,10 @@ ul, ol {
   margin-bottom: -0.5rem;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .ml-8 {
   margin-left: 2rem;
 }
@@ -732,6 +736,11 @@ ul, ol {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .font-semibold {
