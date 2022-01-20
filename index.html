@@ -1,67 +1,85 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
 
 <head>
   <meta charset="utf-8">
-  <title>Luis Garcia</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="favicon.ico">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&family=Langar&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/f7dac051b7.js" crossorigin="anonymous"></script>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Me</title>
+  <link rel="icon" href="./assets/favicon.ico">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
-  <div class="top-container">
-    <img class="top-cloud" src="images/cloud.png" alt="floating-cloud">
-    <h1>I'm Luís</h1>
-    <h2>Student • <span class="pro">Pro</span>grammer</h2>
-    <img class="bottom-cloud" src="images/cloud.png" alt="floating-cloud2">
-    <img class = "mountain" src="images/mountain.png" alt="mountain">
-</div>
-
-
-  <div class="middle-container">
-    <div class="profile">
-      <img src="" alt="">
-      <h2>Hello.</h2>
-      <p class = "text">Hi, my name is Luís Garcia and I'm a third-year Computer Science student at Eastern Washington University. I've been coding for about a year and a half now. It's been a great experience exploring everything that CS offers. I have hopes of being a Full-Stack Developer once I graduate. At the moment, I'm putting in my extra time to learning web development and iOS app development. My goal for 2021 is to secure a full-time Software Engineering Internship. <br>Thank you, for visiting my page feel free to check out some of my work!.</p>
-    </div>
-    <hr>
-    <div class="skills">
-      <h2>Get to know me.</h2>
-      <div class="skill-row">
-        <img class="codingImage" src="images/Computer.png" alt="computers">
-        <h3>How I got started.</h3>
-        <p>Coming up as a first generation American I didn't have much exposure to code growing up. I found my love for code by solving common tech problems that I had. Going into my senior year of high school my Science teacher introduced me to Computer Science as a career path after highschool. At first
-          I was skeptical about it since I never heard about it and I had the stigma that it was for those who exceled at school. I decided to try it out because it had two of my favorite things in it tech and solving problems.
-          Ever since then, I've been hooked learning new technologies and tools!
-        </p>
+<body class="font-mono bg-slate-700">
+  <!-- Credit to this blog post for the animation https://vanntile.com/blog/composited-typing-animation -->
+  <header class="m-10 group text-center align-middle">
+    <h1 class="mb-1 font-mono text-4xl text-gray-100 md:text-6xl">
+      Hi, I'm <br class="block md:hidden" />
+      <span
+        class="inline-flex h-20 pt-2 overflow-x-hidden animate-type whitespace-nowrap text-brand-accent will-change">
+        Luís Garcia👋
+      </span>
+      <span class="box-border inline-block w-1 h-10 ml-2 -mb-2  md:-mb-4 md:h-16 animate-cursor will-change"></span>
+    </h1>
+  </header>
+  <div id="img-top" class="flex flex-col items-center ">
+    <img class="object-contain h-50 w-80" src="assets/prof.png" alt="profile-pic">
+  </div>
+  <div id="row2" class="text-gray-100 align-middle m-20">
+    <p id="intro" class="font-semibold text-2xl">Hi, I’m a fourth-year Computer Science student at Eastern Washington
+      University. Looking for a Summer 2022 Internship and/or a fall Co-op.</p>
+    <br>
+    <p class="text-lg">I’ve been programming for about 2 and a half years now. It’s been a great experience exploring
+      everything that the CS field has to offer. </p>
+    <br>
+    <p class="font-semibold text-2xl mb-2">What made me interested in the field? </p>
+    <p id="expandingintro" class="text-lg">I did not have much access to development tools or an idea of how programs
+      worked. Originally
+      I thought programs that run on computers and smartphones were things of magic that took the top minds in the world
+      to create such a thing. Come my senior year of high school my school finally implemented a Computer Science type
+      course where they had us programming in Scratch which is a drag and drop style of programming. While I did not
+      like the idea of dragging and dropping elements. I did enjoy the satisfaction of having a working program. Even if
+      it’s something as simple as having a sprite move back and forth from the screen it’s something. </p>
+    <br>
+    <p class="text-lg">When it came time to pick a major come my first day at Eastern Washington University It was a
+      no-brainer that Computer Science would be the field for me. Ever since then I’ve been playing the catch-up game by
+      learning front-end development, back-end development, Linux, and much more!</p>
+    <br>
+    <p class="text-lg font-semibold">My goal come graduation is to find employment as a software engineer in the
+      Spokane, WA area if possible. But, as I know the CS field is a rapidly growing industry with so many options. I’m
+      very much interested in exploring different fields and locations. </p>
+    <br>
+    <p class="font-semibold text-2xl mb-2">What I like to do in my free time</p>
+    <ul class="list-decima">
+      <div id="list-items" class="ml-8 text-lg">
+        <li>I’m an active sneakerhead. With a small collection of primarily Jordans and Nikes. </li>
+        <li>I enjoy tinkering with hardware. Love building mechanical keyboards from scratch. </li>
+        <li>As well as learning new technologies for the fun of it. Always working towards a better me is something I
+          strive for every day!</li>
+        <!-- ... -->
       </div>
+    </ul>
+  </div>
+  <br>
 
-      <div class="skill-row">
-        <img class="hobbies" src="images/sneakers.png" alt="hobbies">
-        <h3>Hobbies</h3>
-        <p>As most people my Life isn't all code. I like to skateboard whenever the weather is right. I'm an active sneaker head with a small collection of
-          primarily Jordans and Nikes. Lastly, I love to tinker with tech whether it's fixing up my at home desktop, playing around with a Raspberry Pie,
-          soldering and building mechanical keyboards. Playing around with hardware is one of my favorite way of passing time. </p>
-      </div>
+  <div id="Contacts" class="flex flex-col items-center ">
+    <div id="ContactMe" class="">
+      <a href="mailto:lgarcia29@eagles.ewu.edu">
+        <button class="mb-4 bg-slate-800 hover:bg-slate-600 text-white font-bold py-2 px-4 rounded-full">Let's
+          talk?</button>
+      </a>
     </div>
-    <hr>
-    <div class="contact-me">
-      <h2>Get In Touch!</h2>
-      <h3>Have a look at some of my work. If you have any questions or looking to get in touch with me don't hesitate to reach out!</h3>
-      <a class="btn" href="mailto:lgarcia29@eagles.ewu.edu">CONTACT ME</a>
+    <div id="links" class="grid grid-cols-4 gap-6 text-gray-100">
+      <a href="https://github.com/TechGlue"><i class="text-4xl hover:text-slate-800 fab fa-github"></i></a>
+      <a href="https://ewu.joinhandshake.com/stu/users/14227535"><i
+          class="text-4xl hover:text-slate-800 far fa-handshake"></i></a>
+      <a href="https://www.linkedin.com/in/luis-garcia-0174701a6/"><i
+          class="text-4xl hover:text-slate-800 fab fa-linkedin-in"></i></a>
+      <a href="assets/Resumev2.pdf"><i class="text-4xl hover:text-slate-800 fas fa-file"></i></a>
     </div>
   </div>
-
-
-  <div class="bottom-container">
-    <a href="images/Resumev2.pdf"><i class="far fa-file fa-2x"></i></a>
-    <a href="https://github.com/TechGlue"><i class="fab fa-github fa-2x"></i></a>
-  </div>
-
-
+  <footer class=" text-gray-400 inset-x-0 bottom-0 m-4">@ Copyright Luís Garcia</footer>
+  <script src="https://kit.fontawesome.com/f7dac051b7.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
