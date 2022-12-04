@@ -20,6 +20,7 @@ jobs:
         with:
           name: node-app
           path: .
+    working_directory: ./Website
   deploy:
     environment:
       name: Production
