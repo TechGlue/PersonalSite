@@ -1,4 +1,7 @@
 name: Build and deploy Node.js app to Azure Web App - TechGlue
+defaults:
+      run:
+        working-directory: ./../../Website
 on:
   push:
     branches:
@@ -19,7 +22,6 @@ jobs:
         with:
           name: node-app
           path: .
-    working_directory: ./../../Website
   deploy:
     environment:
       name: Production
