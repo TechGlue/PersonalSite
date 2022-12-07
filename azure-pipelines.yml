@@ -1,6 +1,5 @@
-defaults:
-      run:
-        working-directory: ./Website
+
+working-directory: ./Website
 trigger:
  - rebuild
 pool:
