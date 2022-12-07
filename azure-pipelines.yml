@@ -1,12 +1,11 @@
 ---
-defaults:
-  run:
-    working-directory: ./Website
 trigger:
   - rebuild
 pool:
   vmImage: ubuntu-latest
 steps:
+  - task: set working directory 
+    working-directory: ./Website
   - task: NodeTool@0
     inputs:
       versionSpec: 10.x
