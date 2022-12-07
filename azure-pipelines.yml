@@ -1,17 +1,18 @@
----
 trigger:
   - rebuild
 pool:
   vmImage: ubuntu-latest
 steps:
-  - task: set working directory 
-    working-directory: ./Website
+  -task: Change to directory of website
+    inputs:
+      script: |
+        "cd ./Website\npwd\n"
   - task: NodeTool@0
     inputs:
       versionSpec: 10.x
     displayName: Install Node.js
   - script: |
-      "npm install yarn\nyarn install  \nyarn build\n"
+      "npm install yarn\nyarn install\nyarn build\n"
     displayName: npm install and build
   - task: CopyFiles@2
     inputs:
