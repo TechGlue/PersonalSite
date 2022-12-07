@@ -1,22 +1,24 @@
-
-working-directory: ./Website
+---
+defaults:
+  run:
+    working-directory: ./Website
 trigger:
- - rebuild
+  - rebuild
 pool:
-   vmImage: 'ubuntu-latest'
-steps: 
+  vmImage: ubuntu-latest
+steps:
   - task: NodeTool@0
     inputs:
-     versionSpec: '10.x'
-    displayName: 'Install Node.js'
+      versionSpec: 10.x
+    displayName: Install Node.js
   - script: |
       "npm install yarn\nyarn install  \nyarn build\n"
-    displayName: 'npm install and build'
+    displayName: npm install and build
   - task: CopyFiles@2
     inputs:
-     Contents: 'build/**' # Pull the build directory (React)
-     TargetFolder: '$(Build.ArtifactStagingDirectory)'
+      Contents: build/**
+      TargetFolder: $(Build.ArtifactStagingDirectory)
   - task: PublishBuildArtifacts@1
     inputs:
-      pathtoPublish: $(Build.ArtifactStagingDirectory) 
-      ArtifactName: 'www' # output artifact named www
+      pathtoPublish: $(Build.ArtifactStagingDirectory)
+      ArtifactName: www
