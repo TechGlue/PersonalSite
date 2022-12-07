@@ -3,7 +3,8 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 steps:
-  -task: Change to directory of website
+  - task: CmdLine@2
+    displayName: Change to where website is stored
     inputs:
       script: |
         "cd ./Website\npwd\n"
