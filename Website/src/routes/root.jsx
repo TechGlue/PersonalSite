@@ -3,7 +3,7 @@ import { Outlet, Link } from "react-router-dom";
 export default function Root() {
   return (
     <>
-      <span>Hello, I'm Luis.</span>
+      <span>Hello, I'm Luís. 👋 </span>
 
       <h2>Who am I?</h2>
       <p>
@@ -21,21 +21,21 @@ export default function Root() {
         everything I could along the way. My early projects included building a
         CLI app that could process input and output, configuring my first Linux
         build, and creating various simple programs that helped me remember the
-        syntax for the different languages I used for my coursework. Over time,
-        I progressed to creating websites and full-stack applications for my
-        courses, becoming deeply interested in Linux, Vim, and various other
-        tools that helped me code more efficiently and feel more like a software
-        developer. Throughout all that time spent learning, I eventually landed
-        my first software engineering internship. Looking back, I'm amazed at
-        how much I've learned and grown in that short time. Just a couple of
-        years ago, I didn't even know how programs were built. Now, I have
-        completed my CS degree and am working full-time as a software engineer.
+        syntax for the different languages I used for my coursework.
       </p>
 
-      <h2>
-        What I enjoy to do when I go touch grass. (anything that is not
-        programming)
-      </h2>
+      <p>
+        Over time, I progressed to creating websites and full-stack applications
+        for my courses, becoming deeply interested in Linux, Vim, and various
+        other tools that helped me code more efficiently and help me feel more endeveloped in the software development community. Throughout all that time spent learning, I
+        eventually landed my first software engineering internship. Looking
+        back, I'm amazed at how much I've learned and grown in that short time.
+        Just a couple of years ago, I didn't even know how programs were built.
+        Now, I have completed my CS degree and am working full-time as a
+        software engineer.
+      </p>
+
+      <h2>What I enjoy to do when I'm not infront of a 💻</h2>
       <p>
         At heart, I'm a life long learner who enjoys to pick up any new
         knowledge that I can just because I enjoy being curious and find it very
@@ -48,15 +48,17 @@ export default function Root() {
         build, mechanical keyboards enjoy building and trying out different
         layouts and switches.
       </p>
-
       <nav>
         <nav>
           <ul>
             <li>
-              <Link to={`contact/`}>Contact Me</Link>
+              <Link to={`contact/`}>Contact Me (icons)</Link>
             </li>
             <li>
-              <Link to={`works/`}>Works</Link>
+              <Link to={`works/`}>Github (icons)</Link>
+            </li>
+            <li>
+              <Link to={`works/`}>Resume (and other boring stuff)(icons)</Link>
             </li>
           </ul>
         </nav>
