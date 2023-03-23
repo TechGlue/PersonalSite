@@ -5,6 +5,7 @@ import "./index.css";
 import Root from "./routes/root";
 import Error from "./error-page.jsx";
 import Resume from "./routes/resume.jsx";
+import Equipment from "./routes/equipment.jsx";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
   {
     path: "resume",
     element: <Resume />,
+  },
+  {
+    path: "equipment",
+    element: <Equipment />,
   },
 ]);
 
