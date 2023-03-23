@@ -52,13 +52,13 @@ export default function Root() {
         <nav>
           <ul>
             <li>
-              <Link to={`contact/`}>Contact Me (icons)</Link>
+              <Link to={`/`}>Contact Me (icons)</Link>
             </li>
             <li>
-              <Link to={`works/`}>Github (icons)</Link>
+              <Link to={`/`}>Github (icons)</Link>
             </li>
             <li>
-              <Link to={`works/`}>Resume (and other boring stuff)(icons)</Link>
+              <Link to={`resume/`}>Resume (and other boring stuff)(icons)</Link>
             </li>
           </ul>
         </nav>
