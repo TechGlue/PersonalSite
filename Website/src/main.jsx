@@ -5,7 +5,10 @@ import "./index.css";
 import Root from "./routes/root";
 import Error from "./error-page.jsx";
 import Resume from "./routes/resume.jsx";
+import About from "./routes/about.jsx";
+import SplashPage from "./routes/splashpage.jsx";
 import Equipment from "./routes/equipment.jsx";
+import { ChakraProvider } from "@chakra-ui/react";
 
 const router = createBrowserRouter([
   {
@@ -21,10 +24,24 @@ const router = createBrowserRouter([
     path: "equipment",
     element: <Equipment />,
   },
+  {
+    path: "about",
+    element: <About />,
+  },
+  {
+    path: "home",
+    element: <SplashPage />,
+  },
+  {
+    path: "equipment",
+    element: <Equipment />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
+  <ChakraProvider>
+    <React.StrictMode>
+      <RouterProvider router={router} />
+    </React.StrictMode>
+  </ChakraProvider>
 );
