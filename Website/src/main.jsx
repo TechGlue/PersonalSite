@@ -8,7 +8,6 @@ import Resume from "./routes/resume.jsx";
 import About from "./routes/about.jsx";
 import SplashPage from "./routes/splashpage.jsx";
 import Equipment from "./routes/equipment.jsx";
-import { ChakraProvider } from "@chakra-ui/react";
 
 const router = createBrowserRouter([
   {
@@ -39,9 +38,7 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <ChakraProvider>
     <React.StrictMode>
       <RouterProvider router={router} />
     </React.StrictMode>
-  </ChakraProvider>
 );
