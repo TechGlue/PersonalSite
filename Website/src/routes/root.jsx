@@ -5,9 +5,12 @@ import Navbar from "./components/navbar.jsx";
 export default function Root() {
   return (
     <>
-    <h1 className="">Hello world</h1>
-      <Navbar />
-      <SplashPage />
+      <div class="h-screen flex flex-col justify-center items-center">
+        <div class="flex justify-center ">
+          <Navbar />
+        </div>
+        <SplashPage />
+      </div>
     </>
   );
 }
