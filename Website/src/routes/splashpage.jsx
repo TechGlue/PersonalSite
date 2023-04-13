@@ -41,15 +41,18 @@ export default function SplashPage() {
           I didn't even know how programs were built. Now, I have completed my
           CS degree and am working full-time as a software engineer.
         </p>
-        <p className="text-3xl my-2">Where you can find me</p>
-        <div>
-          <nav>
-            <div className="grid grid-rows-3 grid-flow-col gap-4 mt-4">
-              <Link to={`/`}><i class="fa-brands fa-square-github"></i></Link>
-              <Link to={`/`}><i class="fa-brands fa-linkedin"></i></Link>
-              <Link to={`resume/`}><i class="fa-brands fa-spotify"></i></Link>
+        <div className="mt-10 flex justify-center ">
+            <div className=" text-3xl grid grid-cols-3 gap-4">
+              <Link to={`/`}>
+                <i class="fa-brands fa-square-github"></i>
+              </Link>
+              <Link to={`/`}>
+                <i class="fa-brands fa-linkedin"></i>
+              </Link>
+              <Link to={`resume/`}>
+                <i class="fa-brands fa-spotify"></i>
+              </Link>
             </div>
-          </nav>
         </div>
       </div>
     </>

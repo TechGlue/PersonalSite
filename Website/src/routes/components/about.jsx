@@ -1,11 +1,12 @@
 import * as React from "react";
+import '../../index.css'
 
 export default function About() {
   return (
     <>
       <div>
         <p className="text-cyan-50 text-9xl">A bit about myself</p>
-        <p class="text-cyan-50">
+        <p className="text-cyan-50">
           In 2018, I was introduced to my first programming language, Python,
           during my first year of university. From that moment on, I was hooked
           and eagerly delved into the world of software development, absorbing
