@@ -5,7 +5,7 @@ import "./index.css";
 import Root from "./routes/root";
 import Error from "./error-page.jsx";
 import Resume from "./routes/resume.jsx";
-import About from "./routes/about.jsx";
+import About from "./routes/components/about.jsx";
 import SplashPage from "./routes/splashpage.jsx";
 import Equipment from "./routes/equipment.jsx";
 
