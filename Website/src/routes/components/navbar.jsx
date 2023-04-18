@@ -8,13 +8,13 @@ export default function Navbar() {
       <div class="container mx-auto flex justify-between items-center">
         <ul class="flex gap-4">
           <Link to="/" className="">
-            Home
+           Works 
           </Link>
           <Link to="/" className="">
-            About
+           Gallery 
           </Link>
           <Link to="/" className="">
-            Something
+           Contact 
           </Link>
         </ul>
       </div>

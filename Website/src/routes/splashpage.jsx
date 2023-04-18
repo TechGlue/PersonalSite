@@ -6,9 +6,14 @@ import image from "./../assets/prof.png";
 export default function SplashPage() {
   return (
     <>
-      <p className="text-5xl">Hello, I'm Luís. 👋 </p>
-      <img src={image} alt="my-prof" className="w-60 h-60 rounded-full mt-5" />
+      <div>
+        <p className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-3 text-5xl text-white font-bold">
+          Hello, I'm Luís
+        </p>
+        <p className="animate-typing overflow-hidden whitespace-nowrap"> Loo-eece (emphasis on eece) </p>
+      </div>
 
+      <img src={image} alt="my-prof" className="w-60 h-60 rounded-full mt-5" />
       <div className="mx-32">
         <p className="text-3xl mb-2">Who am I?</p>
         <p>
@@ -29,7 +34,6 @@ export default function SplashPage() {
           coursework.
         </p>
         <br />
-
         <p>
           Over time, I progressed to creating websites and full-stack
           applications for my courses, becoming deeply interested in Linux, Vim,
@@ -41,18 +45,35 @@ export default function SplashPage() {
           I didn't even know how programs were built. Now, I have completed my
           CS degree and am working full-time as a software engineer.
         </p>
-        <div className="mt-10 flex justify-center ">
-            <div className=" text-3xl grid grid-cols-3 gap-4">
-              <Link to={`/`}>
-                <i class="fa-brands fa-square-github"></i>
-              </Link>
-              <Link to={`/`}>
-                <i class="fa-brands fa-linkedin"></i>
-              </Link>
-              <Link to={`resume/`}>
-                <i class="fa-brands fa-spotify"></i>
-              </Link>
-            </div>
+        <p className="text-2xl mt-2 mb-2">
+          When I'm not in front of a computer, I'm:{" "}
+        </p>
+        <ul className="list-disc">
+          <li>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor
+            id aliquet lectus proin nibh nisl.
+          </li>
+          <li>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor
+            id aliquet lectus proin nibh nisl.
+          </li>
+        </ul>
+
+        <div className="mt-10 flex justify-center">Find me on the web: </div>
+        <div className="mt-5 flex justify-center ">
+          <div className="text-3xl grid grid-cols-3 gap-4">
+            <Link to={`/`}>
+              <i class="fa-brands fa-square-github"></i>
+            </Link>
+            <Link to={`/`}>
+              <i class="fa-brands fa-linkedin"></i>
+            </Link>
+            <Link to={`resume/`}>
+              <i class="fa-brands fa-spotify"></i>
+            </Link>
+          </div>
         </div>
       </div>
     </>
