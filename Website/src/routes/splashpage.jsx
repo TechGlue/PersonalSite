@@ -10,7 +10,10 @@ export default function SplashPage() {
         <p className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-3 text-5xl text-white font-bold">
           Hello, I'm Luís
         </p>
-        <p className="animate-typing overflow-hidden whitespace-nowrap"> Loo-eece (emphasis on eece) </p>
+        <p className="animate-typing overflow-hidden whitespace-nowrap">
+          {" "}
+          Loo-eece (emphasis on eece){" "}
+        </p>
       </div>
 
       <img src={image} alt="my-prof" className="w-60 h-60 rounded-full mt-5" />
@@ -19,7 +22,7 @@ export default function SplashPage() {
         <p>
           I'm a Washington based Software Engineer, with a strong background
           working as a developer within the Microsoft ecosystem, with experience
-          in technologies such as .NET, Azure, and MSSQL Server.
+          in technologies such as .NET, Azure, and MSSQL Server. And a passion for curiosities in the world of software development.
         </p>
         <br />
         <p className="text-3xl mb-2">A bit about myself</p>
@@ -31,47 +34,38 @@ export default function SplashPage() {
           a CLI app that could process input and output, configuring my first
           Linux build, and creating various simple programs that helped me
           remember the syntax for the different languages I used for my
-          coursework.
-        </p>
-        <br />
-        <p>
-          Over time, I progressed to creating websites and full-stack
-          applications for my courses, becoming deeply interested in Linux, Vim,
-          and various other tools that helped me code more efficiently and help
-          me feel more endeveloped in the software development community.
-          Throughout all that time spent learning, I eventually landed my first
-          software engineering internship. Looking back, I'm amazed at how much
-          I've learned and grown in that short time. Just a couple of years ago,
-          I didn't even know how programs were built. Now, I have completed my
-          CS degree and am working full-time as a software engineer.
+          coursework. Like everything, in life the more consistent you stay with
+          something the greater chances you have of getting better at it. This
+          consistency lead to me snagging my self my first internship in 2022,
+          and my first programming job. 
         </p>
         <p className="text-2xl mt-2 mb-2">
           When I'm not in front of a computer, I'm:{" "}
         </p>
-        <ul className="list-disc">
+        <ul className="list-disc ml-8">
+          <li>Outside touching grass.</li>
           <li>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor
-            id aliquet lectus proin nibh nisl.
+            Trying to get better at cooking, mainly Mexican breakfast dishes
           </li>
           <li>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor
-            id aliquet lectus proin nibh nisl.
+			Listening to music, mainly hip-hop and R&B
+          </li>
+          <li>
+            Spending way too much time and money tinkering with keyboards :(
           </li>
         </ul>
 
-        <div className="mt-10 flex justify-center">Find me on the web: </div>
+        <div className="mt-10 flex justify-center">Learn more about me: </div>
         <div className="mt-5 flex justify-center ">
           <div className="text-3xl grid grid-cols-3 gap-4">
             <Link to={`/`}>
               <i class="fa-brands fa-square-github"></i>
             </Link>
             <Link to={`/`}>
-              <i class="fa-brands fa-linkedin"></i>
-            </Link>
-            <Link to={`resume/`}>
               <i class="fa-brands fa-spotify"></i>
+            </Link>
+            <Link to={`/`}>
+              <i class="fa-regular fa-square-envelope"></i>
             </Link>
           </div>
         </div>

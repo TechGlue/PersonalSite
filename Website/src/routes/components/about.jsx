@@ -35,7 +35,7 @@ export default function About() {
           knowledge that I can just because I enjoy being curious and find it
           very fufilling to always be on the hunt for new challanges. With that
           being said I'm a big enjoyer of many things. I enjoy cars because
-          simliar to programming they are puzzles where you have to find the
+          simliar to programming teey are puzzles where you have to find the
           problem, repair it, and test if it even works. I enjoy skateboarding,
           while I can't do more than an ollie and the different types of
           shuvits, I have a huge respect for the culture and the devotion to the
