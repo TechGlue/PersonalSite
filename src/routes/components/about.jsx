@@ -46,3 +46,7 @@ export default function About() {
     </>
   );
 }
+  {
+    path: "equipment",
+    element: <Equipment />,
+  },
