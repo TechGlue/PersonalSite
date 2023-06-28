@@ -7,7 +7,6 @@ export default function Root() {
       <div>
         <div class="bg-skin-fill text-skin-base h-screen flex flex-col justify-center items-center">
           <div class="flex justify-center ">
-            <Navbar />
           </div>
           <SplashPage />
         </div>

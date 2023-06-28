@@ -6,26 +6,24 @@ import image from "./../assets/prof.png";
 export default function SplashPage() {
   return (
     <>
-      <div>
-        <p className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-3 text-5xl text-white font-bold">
-          Hello, I'm Luís
-        </p>
-        <p className="animate-typing overflow-hidden whitespace-nowrap">
-          {" "}
-          Loo-eece (emphasis on eece){" "}
-        </p>
-      </div>
-
-      <img src={image} alt="my-prof" className="w-60 h-60 rounded-full mt-5" />
       <div className="mx-32">
-        <p className="text-3xl mb-2">Who am I?</p>
+        <div className="pb-4">
+          <p className="border-r-white pr-3 text-5xl text-white font-bold">
+            Hello, I'm Luís
+          </p>
+          <p className="border-r-white pr-3 whitespace-nowrap">
+            {" "}
+            Loo-eece (emphasis on eece){" "}
+          </p>
+        </div>
+        <p className="text-3xl mb-2 font-bold">Who am I?</p>
         <p>
-          I'm a Washington based Software Engineer, with a strong background
-          working as a developer within the Microsoft ecosystem, with experience
-          in technologies such as .NET, Azure, and MSSQL Server. And a passion for curiosities in the world of software development.
+          I'm a Washington based Software Engineer. Who mostly works with C# at
+          work but has a strong passion and curisoty for other languages that
+          change the way I approach problems and think.
         </p>
         <br />
-        <p className="text-3xl mb-2">A bit about myself</p>
+        <p className="text-3xl mb-2 font-bold">A bit about myself</p>
         <p>
           In 2018, I was introduced to my first programming language, Python,
           during my first year of university. From that moment on, I was hooked
@@ -37,26 +35,20 @@ export default function SplashPage() {
           coursework. Like everything, in life the more consistent you stay with
           something the greater chances you have of getting better at it. This
           consistency lead to me snagging my self my first internship in 2022,
-          and my first programming job. 
+          and my first programming job.
         </p>
-        <p className="text-2xl mt-2 mb-2">
-          When I'm not in front of a computer, I'm:{" "}
-        </p>
+        <p className="text-3xl mt-2 mb-2 font-bold">Quick Facts: </p>
         <ul className="list-disc ml-8">
-          <li>Outside touching grass.</li>
+          <li>Linux enthusiast</li>
+          <li>Currently learning GO, slowley but surely...</li>
           <li>
-            Trying to get better at cooking, mainly Mexican breakfast dishes
+            I enjoy configruing my terminal and learning new tools to boost my
+            productivity
           </li>
-          <li>
-			Listening to music, mainly hip-hop and R&B
-          </li>
-          <li>
-            Spending way too much time and money tinkering with keyboards :(
-          </li>
+          <li>Split keyboard enthusiast (can't live without it)</li>
         </ul>
 
-        <div className="mt-10 flex justify-center">Learn more about me: </div>
-        <div className="mt-5 flex justify-center ">
+        <div className="mt-5 flex justify-left">
           <div className="text-3xl grid grid-cols-3 gap-4">
             <Link to={`/`}>
               <i class="fa-brands fa-square-github"></i>
