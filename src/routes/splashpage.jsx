@@ -18,19 +18,6 @@ export default function SplashPage() {
             className="w-60 h-60 mt-1"
           />
 
-          <div className="mt-5 flex justify-left">
-            <div className="text-3xl grid grid-cols-3 gap-4">
-              <Link to={`/`}>
-                <i class="fa-brands fa-square-github"></i>
-              </Link>
-              <Link to={`/`}>
-                <i class="fa-brands fa-spotify"></i>
-              </Link>
-              <Link to={`/`}>
-                <i class="fa-regular fa-square-envelope"></i>
-              </Link>
-            </div>
-          </div>
         </div>
         <p className="text-3xl mb-2 font-bold">Who am I?</p>
         <p>
@@ -60,7 +47,7 @@ export default function SplashPage() {
         </p>
 
         <p className="text-3xl mt-2 mb-2 font-bold">Quick Facts: </p>
-        <ul className="list-disc ml-8">
+        <ul className="list-disc ml-4">
           <li>Linux enthusiast</li>
           <li>Currently learning GO, slowley but surely...</li>
           <li>
@@ -69,6 +56,19 @@ export default function SplashPage() {
           </li>
           <li>Split keyboard enjoyer</li>
         </ul>
+          <div className="mt-5 flex justify-left">
+            <div className="text-3xl grid grid-cols-3 gap-4">
+              <Link to={`/`}>
+                <i class="fa-brands fa-square-github"></i>
+              </Link>
+              <Link to={`/`}>
+                <i class="fa-brands fa-spotify"></i>
+              </Link>
+              <Link to={`/`}>
+                <i class="fa-regular fa-square-envelope"></i>
+              </Link>
+            </div>
+          </div>
       </div>
     </>
   );
