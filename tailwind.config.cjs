@@ -11,7 +11,7 @@ module.exports = {
           },
           "100%": {
             width: "100%",
-	    visibility: "visible",
+            visibility: "visible",
           },
         },
         blink: {
@@ -23,8 +23,13 @@ module.exports = {
           },
         },
       },
+	  container:{
+		center: true,
+		padding: '9rem',
+
+	  },
       animation: {
-	typing: "typing 3s steps(20), blink 3s infinite",
+        typing: "typing 3s steps(20), blink 3s infinite",
       },
       textColor: {
         skin: {
