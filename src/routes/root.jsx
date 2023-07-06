@@ -3,9 +3,14 @@ import SplashPage from "./splashpage.jsx";
 import Navbar from "./components/navbar.jsx";
 export default function Root() {
   return (
-    <div className="min-h-screen bg-skin-fill text-white">
-      <div className="container mx-auto py-10">
-        <SplashPage />
+    <div className="bg-slate-500 text-white min-h-screen">
+      <div className="p-10 grid grid-cols-1 gap-4">
+        <div className="container mx-auto">
+          <SplashPage />
+        </div>
+        <div>
+
+    </div>
       </div>
     </div>
   );
