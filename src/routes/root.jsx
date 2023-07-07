@@ -15,15 +15,24 @@ export default function Root() {
               <p>&copy; 2023 Luís Garcia. All rights reserved.</p>
               <p className="py-1">
                 Made with{" "}
-                <a className="underline hover:text-secondary" href="https://react.dev/">
+                <a
+                  className="underline hover:text-secondary"
+                  href="https://react.dev/"
+                >
                   React.js
                 </a>{" "}
                 +{" "}
-                <a className="underline hover:text-secondary" href="https://tailwindcss.com/">
+                <a
+                  className="underline hover:text-secondary"
+                  href="https://tailwindcss.com/"
+                >
                   Tailwind CSS
                 </a>{" "}
-                + {" "}
-                <a className="underline hover:text-secondary" href="https://github.com/morhetz/gruvbox">
+                +{" "}
+                <a
+                  className="underline hover:text-secondary"
+                  href="https://github.com/morhetz/gruvbox"
+                >
                   Gruvbox Theme
                 </a>{" "}
               </p>
