@@ -3,15 +3,16 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-	  colors:{
-		'primary': '#282828', 
-		'secondary': '#ebdbb2', 
-		'titles': '#d79921',
-		'secondary-titles': '#98971a',
-		'icons': '#fb4934',
-		'icons-hover': '#cc241d',
-		'copyright': '#a89984'
-	  }, 
+      fontFamily: { firacode: ["Fira Code", "monospace"]}, 
+      colors: {
+        primary: "#282828",
+        secondary: "#ebdbb2",
+        titles: "#d79921",
+        "secondary-titles": "#98971a",
+        icons: "#fb4934",
+        "icons-hover": "#cc241d",
+        copyright: "#a89984",
+      },
       keyframes: {
         typing: {
           "0%": {
@@ -32,11 +33,10 @@ module.exports = {
           },
         },
       },
-	  container:{
-		center: true,
-		padding: '9rem',
-
-	  },
+      container: {
+        center: true,
+        padding: "9rem",
+      },
       animation: {
         typing: "typing 3s steps(20), blink 3s infinite",
       },
