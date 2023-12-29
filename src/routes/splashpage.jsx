@@ -23,7 +23,7 @@ export default function SplashPage() {
 					<p className="text-2xl text-secondary body-font font-firacode">
 						I'm a Washington based Software Engineer, who mostly works with C#
 						at work but has a strong passion and curiosity for other
-						technologies that changes the way I approach problems.
+						technologies that help shape the way I work and think.
 					</p>
 				</div>
 
@@ -37,14 +37,7 @@ export default function SplashPage() {
 							Eastern Washington University Graduate, with a degree in Computer
 							Science
 						</b>
-						. Back in 2018, I was entering my first Computer Science class with
-						no technical background, and I felt overwhelmed.
-						Fortunately, I persevered, and it has changed my life for the
-						better. Through a lot of trial and error, assistance from my peers,
-						and countless hours of coding in my free time, tackling projects big
-						and small, I managed to graduate and secure my first full-time
-						Software Engineering position in the
-						Fall of 2022.
+						. Back in 2018, I entered my first Computer Science class with no technical background. That in my intro to programming class, installing and running a Python 'hello world' script seemed like an impossible task at the time. Despite the discomfort, I persevered, and it has changed my life for the better. It required a lot of trial and error, assistance from my peers, and countless hours spent in the lab programming in my free time. I Eventually, managed to graduate with my bachelor's degree and secure my first full-time Software Engineering position in the Fall of 2022.
 					</p>
 				</div>
 
@@ -53,9 +46,7 @@ export default function SplashPage() {
 				</p>
 				<div className="text-secondary text-2xl">
 					<p className="mt-2">
-						Right now, my main goal is to grow as a individual by continuing to push
-						myself to learn new languages and frameworks. Additionally, I aim to
-						regain my physical fitness through strength and weight training. Trying to get back to my pre-covid weight. And finally, I want to do more fufilling work/activties, maybe 2024 will be the year I dive into open source and blogging.
+						Currently, my primary goal is personal growth by persistently challenging myself to acquire proficiency in new languages and frameworks. Concurrently, I aspire to reclaim my physical fitness through strength and weight training, aiming to return to my pre-COVID weight. Additionally, I intend to engage in more fulfilling activities, contemplating diving into open source projects and blogging in 2024. I aim for more intellectually stimulating pursuits after work, seeking to break away from the habit of doomscrolling.
 					</p>
 				</div>
 
@@ -66,7 +57,7 @@ export default function SplashPage() {
 					<ul className="text-secondary list-disc ml-8 text-2xl">
 						<li>Currently learning GO, slowley but surely...</li>
 						<li>
-							I enjoy configruing my terminal and learning new tools to "boost
+							I enjoy configiruing my terminal and learning new tools to "boost
 							my productivity"
 						</li>
 						<li>Linux enjoyer</li>
