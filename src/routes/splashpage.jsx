@@ -46,7 +46,9 @@ export default function SplashPage() {
 				</p>
 				<div className="text-secondary text-2xl">
 					<p className="mt-2">
-						Currently, my primary goal is personal growth by persistently challenging myself to acquire proficiency in new languages and frameworks. Concurrently, I aspire to reclaim my physical fitness through strength and weight training, aiming to return to my pre-COVID weight. Additionally, I intend to engage in more fulfilling activities, contemplating diving into open source projects and blogging in 2024. I aim for more intellectually stimulating pursuits after work, seeking to break away from the habit of doomscrolling.
+						Right now, my main goal is to grow as a individual by challenging
+						myself to learn new (to me) languages and frameworks. I also asspire to
+						regain my physical fitness through strength and weight training. Trying to to return to my pre-COVID weight and conditioning. Additionally, I intend on doing more fufilling work/activties, maybe 2024 will be the year I dive into open source and blogging. Aiming to do more stimulating activites after work, hoping to break away from the habit of doomscrolling and other time suckers.
 					</p>
 				</div>
 
