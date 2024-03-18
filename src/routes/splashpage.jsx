@@ -27,20 +27,6 @@ export default function SplashPage() {
 					</p>
 				</div>
 
-				<p className="text-3xl mb-2 font-bold text-secondary-titles">
-					A bit about my journey
-				</p>
-				<div className="text-secondary text-2xl">
-					<p>
-						I'm a{" "}
-						<b>
-							Eastern Washington University Graduate, with a degree in Computer
-							Science
-						</b>
-						. Back in 2018, I entered my first Computer Science class with no technical background. That in my intro to programming class, installing and running a Python 'hello world' script seemed like an impossible task at the time. Despite the discomfort, I persevered, and it has changed my life for the better. It required a lot of trial and error, assistance from my peers, and countless hours spent in the lab programming in my free time. I Eventually, managed to graduate with my bachelor's degree and secure my first full-time Software Engineering position in the Fall of 2022.
-					</p>
-				</div>
-
 				<p className="text-3xl font-bold text-secondary-titles">
 					My current goals
 				</p>
@@ -71,11 +57,8 @@ export default function SplashPage() {
 							<a href="https://github.com/TechGlue">
 								<i class="fa-brands fa-square-github hover:text-icons-hover"></i>
 							</a>
-							<a href="malito:lgarcia29@ewu.edu">
-								<i class="fa-regular fa-square-envelope hover:text-icons-hover"></i>
-							</a>
 							<a href="https://www.linkedin.com/in/luis-garcia-097a60237/">
-								<i class="fa-regular fa-linkedin hover:text-icons-hover"></i>
+								<i class="fa-brands fa-linkedin hover:text-icons-hover"></i>
 							</a>
 						</div>
 					</div>
