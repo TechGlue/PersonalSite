@@ -45,7 +45,7 @@ export default function SplashPage() {
 					<ul className="text-secondary list-disc ml-8 text-2xl">
 						<li>Currently learning GO, slowley but surely...</li>
 						<li>
-							I enjoy configiruing my terminal and learning new tools to "boost
+							I enjoy configuring my terminal and learning new tools to "boost
 							my productivity"
 						</li>
 						<li>Linux enjoyer</li>
