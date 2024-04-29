@@ -1,17 +1,25 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  // darkMode: "selector",
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      fontFamily: { firacode: ["Fira Code", "monospace"]}, 
+      fontFamily: { firacode: ["Fira Code", "monospace"] },
       colors: {
-        primary: "#282828",
-        secondary: "#ebdbb2",
+        primary: "#fbf1c7",
+        secondary: "#7c6f64",
         titles: "#d79921",
         "secondary-titles": "#98971a",
-        icons: "#fb4934",
-        "icons-hover": "#cc241d",
+        icons: "#458588",
+        "icons-hover": "#076678",
         copyright: "#a89984",
+        "primary-dark": "#282828",
+        "secondary-dark": "#ebdbb2",
+        "titles-dark": "#d79921",
+        "secondary-titles-dark": "#98971a",
+        "icons-dark": "#fb4934",
+        "icons-hover-dark": "#cc241d",
+        "copyright-dark": "#a89984",
       },
       keyframes: {
         typing: {
