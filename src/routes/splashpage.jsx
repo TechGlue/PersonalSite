@@ -33,8 +33,8 @@ export default function SplashPage() {
 				<div className="text-secondary text-2xl">
 					<p className="mt-2">
 						Right now, my main goal is to grow as a individual by challenging
-						myself to learn new (to me) languages and frameworks. I also asspire to
-						regain my physical fitness through strength and weight training. Trying to to return to my pre-COVID weight and conditioning. Additionally, I intend on doing more fufilling work/activties, maybe 2024 will be the year I dive into open source and blogging. Aiming to do more stimulating activites after work, hoping to break away from the habit of doomscrolling and other time suckers.
+						myself to learn new (to me) languages and frameworks. I also aspire to
+						get healthy again through strength and weight training. Trying to to return to my pre-COVID weight and conditioning. Additionally, I intend on doing more fufilling work/activties, maybe 2024 will be the year I dive into open source and blogging. Aiming to do more stimulating activities after work, hoping to break away from bad habits.
 					</p>
 				</div>
 
@@ -50,7 +50,7 @@ export default function SplashPage() {
 						</li>
 						<li>Linux enjoyer</li>
 						<li>Split keyboard enjoyer</li>
-						<li>Amateur baker</li>
+						<li>Amateur cook</li>
 					</ul>
 					<div className="mt-10 flex justify-left text-icons ">
 						<div className="text-3xl grid grid-cols-4 gap-4">
