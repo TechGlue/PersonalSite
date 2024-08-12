@@ -21,9 +21,7 @@ export default function SplashPage() {
 				</p>
 				<div>
 					<p className="text-2xl text-secondary body-font font-firacode">
-						I'm a Washington based Software Engineer, who mostly works with C#
-						at work but has a strong passion and curiosity for other
-						technologies that help shape the way I work and think.
+I'm a Washington-based Software Engineer who mostly works in C#, but I have a strong passion and curiosity for exploring other technologies that enhance my skills and boost my developer confidence. I've been writing code since 2018 at the start of my computer science degree, and professionally for the last 2 years. 
 					</p>
 				</div>
 
@@ -32,25 +30,23 @@ export default function SplashPage() {
 				</p>
 				<div className="text-secondary text-2xl">
 					<p className="mt-2">
-						Right now, my main goal is to grow as a individual by challenging
-						myself to learn new (to me) languages and frameworks. I also aspire to
-						get healthy again through strength and weight training. Trying to to return to my pre-COVID weight and conditioning. Additionally, I intend on doing more fufilling work/activties, maybe 2024 will be the year I dive into open source and blogging. Aiming to do more stimulating activities after work, hoping to break away from bad habits.
+Right now, a couple of my 2024 goals are to grow my skills by challenging myself to learn new (to me) languages and frameworks. A personal goal of mine is to get healthier, do more cardio, weightlifting (PRs: Squat 255 and Bench 185 lbs...), and anything outdoors, really trying to avoid the sedentary lifestyle. Additionally, I want to break out of my usual routine, try some more stimulating activities after work, and break away from bad habits. Plans are to expand this site and start blogging about my experiences and projects.
 					</p>
 				</div>
 
 				<p className="text-3xl mt-2 mb-2 font-bold text-secondary-titles">
-					Quick Facts:{" "}
+					Interests{" "}
 				</p>
 				<div>
 					<ul className="text-secondary list-disc ml-8 text-2xl">
-						<li>Currently learning GO, slowley but surely...</li>
+						<li>Currently learning Go, slowley but surely...</li>
 						<li>
 							I enjoy configuring my terminal and learning new tools to "boost
 							my productivity"
 						</li>
 						<li>Linux enjoyer</li>
-						<li>Split keyboard enjoyer</li>
-						<li>Amateur cook</li>
+						<li>Split keyboard enjoyer (<a className="underline hover:text-secondary-titles" href="https://www.moergo.com/">MoErgo Glove80</a>)</li>
+						<li>Amateur cook (favorite dish, chilaquiles)</li>
 					</ul>
 					<div className="mt-10 flex justify-left text-icons ">
 						<div className="text-3xl grid grid-cols-4 gap-4">

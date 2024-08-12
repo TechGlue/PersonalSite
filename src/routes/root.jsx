@@ -12,7 +12,7 @@ export default function Root() {
         <div>
           <footer class="text-copyright text-sm">
             <div class="container mx-auto text-left">
-              <p>&copy; 2023 Luís Garcia. All rights reserved.</p>
+              <p>&copy; 2024 Luís Garcia. All rights reserved.</p>
               <p className="py-1">
                 Made with{" "}
                 <a
