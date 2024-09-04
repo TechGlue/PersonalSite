@@ -46,7 +46,7 @@ Right now, a couple of my 2024 goals are to grow my skills by challenging myself
 						</li>
 						<li>Linux enjoyer</li>
 						<li>Split keyboard enjoyer (<a className="underline hover:text-secondary-titles" href="https://www.moergo.com/">MoErgo Glove80</a>)</li>
-						<li>Amateur cook (favorite dish, chilaquiles)</li>
+						<li>Amateur cook</li>
 					</ul>
 					<div className="mt-10 flex justify-left text-icons ">
 						<div className="text-3xl grid grid-cols-4 gap-4">
