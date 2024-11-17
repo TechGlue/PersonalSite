@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-splashpage',
+  selector: 'splashpage',
   standalone: true,
   imports: [],
   templateUrl: './splashpage.component.html',
-  styleUrl: './splashpage.component.css'
+  styleUrl: './splashpage.component.css',
 })
-export class SplashpageComponent {
-
-}
+export class SplashpageComponent {}

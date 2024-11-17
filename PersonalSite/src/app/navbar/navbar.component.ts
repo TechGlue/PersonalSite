@@ -10,9 +10,9 @@ import { NavBarRoutes } from './NavBarRoutes';
 })
 export class NavbarComponent {
   navBarRoutes: NavBarRoutes[] = [
-    { routeName: 'Home', routePath: '/home' },
     { routeName: 'About', routePath: '/about' },
-    { routeName: 'Experience', routePath: '/experience' },
+    { routeName: 'Experience', routePath: '/education' },
+    { routeName: 'Work', routePath: '/work' },
     { routeName: 'Contact', routePath: '/contact' },
   ];
 }
