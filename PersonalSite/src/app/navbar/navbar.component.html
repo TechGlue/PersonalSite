@@ -1,6 +1,7 @@
-<div>
+<nav class="">
+    <div class="grid grid-cols-4">
   @for( routes of navBarRoutes; track routes ){
-    <a href="{{ routes.routePath }}" class="nav-link">{{ routes.routeName}}</a>
-    <br>
+      <a href="{{ routes.routePath }}" class="nav-link">{{ routes.routeName}}</a>
   }
-</div>
+    </div>
+</nav>
