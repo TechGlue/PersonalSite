@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { WorkitemComponent } from './workitem/workitem.component';
 
 @Component({
-  selector: 'work',
+  selector: 'app-work',
   standalone: true,
-  imports: [],
+  imports: [WorkitemComponent],
   templateUrl: './work.component.html',
   styleUrl: './work.component.css',
 })
