@@ -28,7 +28,7 @@
       </ul>
     </div>
     <br />
-    <div id="container-for-edu">
+    <div id="education">
       <p>Education</p>
       <p>Eastern Washington University</p>
       <p>
@@ -42,52 +42,41 @@
       </p>
     </div>
     <br />
-    <div id="container-for-experience ">
+    <div id="experience">
       <p>Experience</p>
-      <div>
-        <p>Premera Blue Cross</p>
-        <p>
-          Software Developer I, Mountlake Terrace, WA [JAN. 2023 - AUG. 2024]
-        </p>
-        <p>
-          Premera Blue Cross is a prominent blue cross blue shield insurance
+      <app-experience
+        [company]="'Premera Blue Cross '"
+        [position]="
+          'Software Engineer I, Mountlake Terrace, WA [JAN. 2023 - AUG. 2024]'
+        "
+        [summary]="
+          'Premera Blue Cross is a prominent blue cross blue shield insurance
           company in the Pacific Northwest. As a full time developer, I got the
           opportunity to work on business changes to back-end applications that
           fulfilled crucial functions for the business, build developer tools to
           streamline and standardized code deployments, and develop internal
-          desktop applications.
-        </p>
-
-        <p>
-          Further responsibilities included designing, writing documentation,
+          desktop applications.'
+        "
+        [misc]="
+          'Further responsibilities included designing, writing documentation,
           collaborating with the business and various teams at Premera, and
-          driving the daily developer standup.
-        </p>
-      </div>
+          driving the daily developer standup.'
+        "
+      />
 
-      <div>
-        <p>Premera Blue Cross</p>
-        <p>
-          Software Developer Intern, Mountlake Terrace, WA [JUL. 2022 - SEP.
-          2022]
-        </p>
-        <p>
-          My initial introduction to writing professional code and working in a
-          team environment came during my internship at Premera. I gained
-          experience in various areas, including shadowing developers and
-          learning how they design and deliver code to make healthcare work
-          better for the customer. I also learned about the insurance business
-          and frequently collaborated with internal Premera business analysts
-          while following Agile practices. By the end of the summer, I
-          successfully delivered a full-stack internal web application for
-          parsing enrollment files and generating reports for the business to
-          leverage.
-        </p>
-      </div>
+      <app-experience
+        [company]="'Premera Blue Cross'"
+        [position]="
+          'Software Engineering Intern, Mountlake Terrace, WA [JUL. 2022 - SEP. 2022]'
+        "
+        [summary]="
+          'My initial introduction to writing professional code and working in a team environment was during my internship at Premera. I gained valuable experience in various areas, including shadowing developers and learning how they design and deliver code to make healthcare work better for the customer. I also gained insights into the health insurance business and frequently collaborated with internal Premera business analysts while adhering to Agile practices. By the end of the summer, I successfully delivered a full-stack internal web application for parsing enrollment filesand generating reports for the business to utilize.'
+        "
+      />
     </div>
   </div>
 
-  <div>
+  <div id="recognition">
     <p>Special Recognitions</p>
     <ul>
       <li>
@@ -95,5 +84,12 @@
       </li>
       <li>Recipient Washington State Opportunity Scholarship (WSOS)</li>
     </ul>
+  </div>
+  <div>
+    <p>Portfolio</p>
+    <p>
+      Feel free to <a href="/work">check out</a>
+      on some of the things that I've found fun learning and developing!
+    </p>
   </div>
 </div>
