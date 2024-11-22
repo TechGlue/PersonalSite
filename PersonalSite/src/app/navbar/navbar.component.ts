@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavBarRoutes } from './NavBarRoutes';
 
 @Component({
-  selector: 'navbar',
+  selector: 'app-navbar',
   standalone: true,
   imports: [],
   templateUrl: './navbar.component.html',
