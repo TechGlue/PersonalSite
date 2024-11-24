@@ -2,7 +2,32 @@
 module.exports = {
   content: ["./src/**/*.{html,ts}"],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        typing: {
+          "0%": {
+            width: "0%",
+            visibility: "hidden",
+          },
+          "100%": {
+            width: "100%",
+          },
+        },
+        blink: {
+          "50%": {
+            borderColor: "transparent",
+          },
+          "100%": {
+            borderColor: "white",
+          },
+        },
+      },
+      animation: {
+        // the infinite in the alternate is what will make the cursor go back and forth
+        //  removing it will create only one run
+        typing: "typing 2s steps(20) alternate, blink .7s infinite",
+      },
+    },
   },
   plugins: [],
   variants: {
