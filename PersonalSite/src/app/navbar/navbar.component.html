@@ -1,5 +1,9 @@
-<nav class="place-items-end m-1">
+<nav class="m-1">
   <div class="flex gap-2">
+    @if (temp != 0 && city != "") {
+      <p>{{ city }}</p>
+      <p>{{ temp }} ℉</p>
+    }
     @for (routes of navBarRoutes; track routes) {
       <a href="{{ routes.routePath }}" class="nav-link">{{
         routes.routeName
