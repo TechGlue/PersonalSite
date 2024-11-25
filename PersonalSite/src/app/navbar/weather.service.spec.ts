@@ -2,11 +2,19 @@ import { TestBed } from '@angular/core/testing';
 import { WeatherService } from './weather.service';
 import { provideHttpClient } from '@angular/common/http';
 import { provideHttpClientTesting } from '@angular/common/http/testing';
+import { HttpClient } from '@angular/common/http';
+import { of } from 'rxjs';
+import { Weather } from './weather';
 
 describe('WeatherService', () => {
-  let service: WeatherService;
+  let httpClientSpy: jasmine.SpyObj<HttpClient>;
+  let weatherService: WeatherService;
 
   beforeEach(() => {
+    httpClientSpy = jasmine.createSpyObj('HttpClient', ['get']);
+    // note angular has a lot of defaults in it's tests ensure that you aren't injecting or redeclaring the weather service once you provided the http client spy
+    weatherService = new WeatherService(httpClientSpy);
+
     TestBed.configureTestingModule({
       providers: [
         WeatherService,
@@ -14,10 +22,29 @@ describe('WeatherService', () => {
         provideHttpClientTesting(),
       ],
     });
-    service = TestBed.inject(WeatherService);
   });
 
   it('should be created', () => {
-    expect(service).toBeTruthy();
+    expect(weatherService).toBeTruthy();
+  });
+
+  it('should return expected weather (HttpClient called once)', (done: DoneFn) => {
+    const expectedWeather: Weather = { name: 'Portland', main: { temp: 30 } };
+
+    // this is telling the httpclient spy to return this specific value that we are passing in. Should return observable of expectedWeather
+    httpClientSpy.get.and.returnValue(of(expectedWeather));
+
+    // subscribe and check if the weather is equal to the expected weather
+    weatherService.getWeather().subscribe({
+      next: (weather) => {
+        expect(weather)
+          .withContext('expected weather')
+          .toEqual(expectedWeather);
+        done();
+      },
+      error: done.fail,
+    });
+
+    expect(httpClientSpy.get.calls.count()).withContext('one call').toBe(1);
   });
 });
