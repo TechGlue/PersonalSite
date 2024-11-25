@@ -21,4 +21,9 @@ describe('NavbarComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should convert to fahrenheit', () => {
+    expect(component.convertToFahrenheit(0)).toBe(32);
+    expect(component.convertToFahrenheit(10)).toBe(50);
+  });
 });

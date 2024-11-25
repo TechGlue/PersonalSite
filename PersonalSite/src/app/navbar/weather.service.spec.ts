@@ -3,8 +3,9 @@ import { WeatherService } from './weather.service';
 import { provideHttpClient } from '@angular/common/http';
 import { provideHttpClientTesting } from '@angular/common/http/testing';
 import { HttpClient } from '@angular/common/http';
-import { of } from 'rxjs';
+import { of, throwError } from 'rxjs';
 import { Weather } from './weather';
+import { HttpErrorResponse } from '@angular/common/http';
 
 describe('WeatherService', () => {
   let httpClientSpy: jasmine.SpyObj<HttpClient>;
@@ -46,5 +47,25 @@ describe('WeatherService', () => {
     });
 
     expect(httpClientSpy.get.calls.count()).withContext('one call').toBe(1);
+  });
+
+  it('should return an error when the server returns a 404', (done: DoneFn) => {
+    const errorResponse = new HttpErrorResponse({
+      error: {
+        message: 'Unable to connect to openweathermap, check connection string',
+      },
+      status: 404,
+      statusText: 'Not Found',
+    });
+
+    httpClientSpy.get.and.returnValue(throwError(() => errorResponse));
+
+    weatherService.getWeather().subscribe({
+      next: () => done.fail('expected an error, not weather'),
+      error: (error) => {
+        expect(error.message).toContain('404 Not Found');
+        done();
+      },
+    });
   });
 });

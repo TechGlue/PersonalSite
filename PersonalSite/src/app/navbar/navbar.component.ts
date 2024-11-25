@@ -23,9 +23,11 @@ export class NavbarComponent implements OnInit {
   ];
 
   ngOnInit(): void {
-    this.weatherService.getWeather().subscribe((weatherData) => {
-      this.city = weatherData.name;
-      this.temp = this.convertToFahrenheit(weatherData.main.temp);
+    this.weatherService.getWeather().subscribe({
+      next: (weatherData) => {
+        this.city = weatherData.name;
+        this.temp = this.convertToFahrenheit(weatherData.main.temp);
+      },
     });
   }
 
