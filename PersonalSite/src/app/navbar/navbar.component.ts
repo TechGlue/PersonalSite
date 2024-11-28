@@ -1,12 +1,9 @@
 import { Component } from '@angular/core';
 import { NavBarRoutes } from './NavBarRoutes';
-import { AsyncPipe } from '@angular/common';
 import { WeatherService } from './weather.service';
 
 @Component({
   selector: 'app-navbar',
-  standalone: true,
-  imports: [AsyncPipe],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css',
 })
