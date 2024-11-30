@@ -3,6 +3,10 @@ module.exports = {
   content: ["./src/**/*.{html,ts}"],
   theme: {
     extend: {
+      fontFamily: {
+        sen: ["Sen", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
+      },
       keyframes: {
         typing: {
           "0%": {
