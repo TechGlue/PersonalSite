@@ -1,16 +1,25 @@
 <div class="">
-  <p>Hello, I'm</p>
+  <p class="text-textSecondary text-xl">Hello, I'm</p>
   <div class="w-max">
     <p
-      class="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-black pr-5 text-4xl font-bold text-black"
+      class="text-textTitle animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-black pr-4 text-4xl font-bold"
     >
       Luís Garcia
     </p>
   </div>
-  <p>I enjoy building things and solving problems big or small</p>
-  <p>
-    Who am I? I’m a software engineer based in Washington, specializing in
-    building quality back-end applications and websites.
-  </p>
-  <button (click)="navigateToContact()" class="bg-sky-50">Let's talk</button>
+  <div class="text-xl">
+    <p class="text-2xl">
+      I enjoy building software and solving problems big or small
+    </p>
+    <p>
+      <b> Who am I?</b> I’m a software engineer based in Washington,
+      specializing in building quality back-end applications and websites.
+    </p>
+  </div>
+  <button
+    (click)="navigateToContact()"
+    class="mt-2 mb-2 bg-buttonPrimary hover:bg-buttonHover font-semibold py-2 px-4 rounded border-2 border-textSecondary"
+  >
+    Let's talk
+  </button>
 </div>

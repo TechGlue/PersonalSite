@@ -7,6 +7,14 @@ module.exports = {
         sen: ["Sen", "sans-serif"],
         inter: ["Inter", "sans-serif"],
       },
+      colors: {
+        bgPrimary: "#233167",
+        textTitle: "#F2F2F2",
+        textPrimary: "#B8CAF9",
+        textSecondary: "#4C70AC",
+        buttonPrimary: "#54626E",
+        buttonHover: "#3a5681",
+      },
       keyframes: {
         typing: {
           "0%": {
