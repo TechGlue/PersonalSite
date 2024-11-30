@@ -9,11 +9,7 @@ import { of } from 'rxjs';
 describe('NavbarComponent', () => {
   let component: NavbarComponent;
   let fixture: ComponentFixture<NavbarComponent>;
-  let getWeatherSpy: jasmine.Spy;
   let weatherService: WeatherService;
-
-  // 30 degrees celsius = 86 degrees fahrenheit
-  const dummyWeather: Weather = { name: 'Portland', main: { temp: 30 } };
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
@@ -26,9 +22,10 @@ describe('NavbarComponent', () => {
     }).compileComponents();
 
     weatherService = TestBed.inject(WeatherService);
-    getWeatherSpy = spyOn(weatherService, 'getWeather').and.returnValue(
-      of(dummyWeather),
-    );
+
+    // 30 degrees celsius = 86 degrees fahrenheit
+    const dummyWeather: Weather = { name: 'Portland', main: { temp: 30 } };
+    spyOn(weatherService, 'getWeather').and.returnValue(of(dummyWeather));
 
     fixture = TestBed.createComponent(NavbarComponent);
     fixture.autoDetectChanges();
