@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 import { NavBarRoutes } from './NavBarRoutes';
 import { WeatherService } from './weather.service';
 
+// todo:
+// research and look for testing with a routing module
+
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -12,6 +15,7 @@ export class NavbarComponent implements OnInit {
   temp = 0;
 
   constructor(private weatherService: WeatherService) {}
+
   navBarRoutes: NavBarRoutes[] = [
     { routeName: 'About', routePath: '/about' },
     { routeName: 'Experience', routePath: '/education' },
