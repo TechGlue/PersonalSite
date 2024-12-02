@@ -14,6 +14,7 @@ module.exports = {
         textSecondary: "#c9d4e6",
         buttonPrimary: "#54626E",
         buttonHover: "#3a5681",
+        iconsHover: "#3a5681",
       },
       keyframes: {
         typing: {

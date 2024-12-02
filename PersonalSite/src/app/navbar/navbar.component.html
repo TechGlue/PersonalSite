@@ -5,9 +5,11 @@
       <p>{{ temp }} ℉</p>
     }
     @for (routes of navBarRoutes; track routes) {
-      <a href="{{ routes.routePath }}" class="nav-link">{{
-        routes.routeName
-      }}</a>
+      <a
+        href="{{ routes.routePath }}"
+        class="nav-link hover:text-buttonHover"
+        >{{ routes.routeName }}</a
+      >
     }
   </div>
 </nav>
