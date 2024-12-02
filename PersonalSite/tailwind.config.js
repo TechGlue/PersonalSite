@@ -11,7 +11,7 @@ module.exports = {
         bgPrimary: "#233167",
         textTitle: "#F2F2F2",
         textPrimary: "#B8CAF9",
-        textSecondary: "#4C70AC",
+        textSecondary: "#c9d4e6",
         buttonPrimary: "#54626E",
         buttonHover: "#3a5681",
       },
@@ -41,7 +41,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-debug-screens")],
   variants: {
     scrollBehavior: ["responsive"],
   },
