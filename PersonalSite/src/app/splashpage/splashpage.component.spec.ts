@@ -19,24 +19,25 @@ describe('SplashpageComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should render the button', () => {
-    const fixture = TestBed.createComponent(SplashpageComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('button')?.textContent).toContain(
-      "Let's talk",
-    );
-  });
+  // Disabled the button still rethinking design
+  //
+  // it('should render the button', () => {
+  //   const fixture = TestBed.createComponent(SplashpageComponent);
+  //   fixture.detectChanges();
+  //   const compiled = fixture.nativeElement as HTMLElement;
+  //   expect(compiled.querySelector('button')?.textContent).toContain(
+  //     "Let's talk",
+  //   );
+  // });
+  // it('on button click should change the url to /contact', () => {
+  //   const fixture = TestBed.createComponent(SplashpageComponent);
+  //   fixture.detectChanges();
+  //   const compiled = fixture.nativeElement as HTMLElement;
+  //   const button = compiled.querySelector('button');
+  //   expect(button).not.toBeNull();
 
-  it('on button click should change the url to /contact', () => {
-    const fixture = TestBed.createComponent(SplashpageComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    const button = compiled.querySelector('button');
-    expect(button).not.toBeNull();
-
-    if (button !== null) {
-      expect(button.textContent).toContain("Let's talk");
-    }
-  });
+  //   if (button !== null) {
+  //     expect(button.textContent).toContain("Let's talk");
+  //   }
+  // });
 });
