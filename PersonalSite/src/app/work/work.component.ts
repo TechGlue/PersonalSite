@@ -6,6 +6,5 @@ import { WorkitemComponent } from './workitem/workitem.component';
   selector: 'app-work',
   imports: [WorkitemComponent],
   templateUrl: './work.component.html',
-  styleUrl: './work.component.css',
 })
 export class WorkComponent {}

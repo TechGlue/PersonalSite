@@ -4,7 +4,6 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-splashpage',
   templateUrl: './splashpage.component.html',
-  styleUrl: './splashpage.component.css',
 })
 export class SplashpageComponent {
   constructor(private router: Router) {}
