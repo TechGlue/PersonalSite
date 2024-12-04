@@ -1,92 +1,91 @@
-<div>
-  <p class="text-xl">The story so far...</p>
+<div class="space-y-4 mt-10">
+  <p class="text-textSecondary text-2xl font-bold">The story so far...</p>
+  <div id="skills">
+    <p>Skills</p>
+    <p>
+      I've worked with various languages and tools throughout my journey as a
+      student and a developer. There often times where I learn a language for a
+      one-off project, coursework, or was influenced by developer hype... But
+      these are the ones that I've enjoyed and continue to use today both
+      personally and professionally.
+    </p>
+    <ul>
+      <li>C#</li>
+      <li>.NET</li>
+      <li>Typescript</li>
+      <li>Angular</li>
+      <li>SQL</li>
+      <li>Docker</li>
+      <li>Bash</li>
+      <li>NeoVim/Vim Bindings</li>
+      <li>Rider</li>
+    </ul>
+  </div>
   <br />
-  <div id="container-for-resume">
-    <div id="skills">
-      <p>Skills</p>
-      <p>
-        I've worked with various languages and tools throughout my journey as a
-        student and a developer. There often times where I learn a language for
-        a one-off project, coursework, or was influenced by developer hype...
-        But these are the ones that I've enjoyed and continue to use today both
-        personally and professionally.
-      </p>
-      <ul>
-        <li>C#</li>
-        <li>.NET</li>
-        <li>Typescript</li>
-        <li>Angular</li>
-        <li>SQL</li>
-        <li>Docker</li>
-        <li>Bash</li>
-        <li>NeoVim/Vim Bindings</li>
-        <li>Rider</li>
-      </ul>
-    </div>
-    <br />
-    <div id="education">
-      <p>Education</p>
-      <p>Eastern Washington University</p>
-      <p>
-        Bachelor's in Computer Science with a Minor in Cyber Security [DEC.2022]
-      </p>
-      <p>
-        Relevant Coursework: Object Oriented Programming, Data Structures,
-        Algorithms, Discrete Mathematics, .NET Programming, .NET Web
-        Applications, Operating Systems, C and Unix Programming,and Software
-        Development Principles.
-      </p>
-    </div>
-    <br />
-    <div id="experience">
-      <p>Experience</p>
-      <app-experience
-        [company]="'Premera Blue Cross '"
-        [position]="
-          'Software Engineer I, Mountlake Terrace, WA [JAN. 2023 - AUG. 2024]'
-        "
-        [summary]="
-          'Premera Blue Cross is a prominent blue cross blue shield insurance
+  <div id="experience">
+    <p>Experience</p>
+    <app-experience
+      [company]="'Premera Blue Cross '"
+      [position]="
+        'Software Engineer I, Mountlake Terrace, WA [JAN. 2023 - AUG. 2024]'
+      "
+      [summary]="
+        'Premera Blue Cross is a prominent blue cross blue shield insurance
           company in the Pacific Northwest. As a full time developer, I got the
           opportunity to work on business changes to back-end applications that
           fulfilled crucial functions for the business, build developer tools to
           streamline and standardized code deployments, and develop internal
           desktop applications.'
-        "
-        [misc]="
-          'Further responsibilities included designing, writing documentation,
+      "
+      [misc]="
+        'Further responsibilities included designing, writing documentation,
           collaborating with the business and various teams at Premera, and
           driving the daily developer standup.'
-        "
-      />
+      "
+    />
 
-      <app-experience
-        [company]="'Premera Blue Cross'"
-        [position]="
-          'Software Engineering Intern, Mountlake Terrace, WA [JUL. 2022 - SEP. 2022]'
-        "
-        [summary]="
-          'My initial introduction to writing professional code and working in a team environment was during my internship at Premera. I gained valuable experience in various areas, including shadowing developers and learning how they design and deliver code to make healthcare work better for the customer. I also gained insights into the health insurance business and frequently collaborated with internal Premera business analysts while adhering to Agile practices. By the end of the summer, I successfully delivered a full-stack internal web application for parsing enrollment filesand generating reports for the business to utilize.'
-        "
-      />
-    </div>
+    <app-experience
+      [company]="'Premera Blue Cross'"
+      [position]="
+        'Software Engineering Intern, Mountlake Terrace, WA [JUL. 2022 - SEP. 2022]'
+      "
+      [summary]="
+        'My initial introduction to writing professional code and working in a team environment was during my internship at Premera. I gained valuable experience in various areas, including shadowing developers and learning how they design and deliver code to make healthcare work better for the customer. I also gained insights into the health insurance business and frequently collaborated with internal Premera business analysts while adhering to Agile practices. By the end of the summer, I successfully delivered a full-stack internal web application for parsing enrollment filesand generating reports for the business to utilize.'
+      "
+    />
   </div>
+</div>
+<br />
 
-  <div id="recognition">
-    <p>Special Recognitions</p>
-    <ul>
-      <li>
-        Graduated with Honors (cum laude) from Eastern Washington University
-      </li>
-      <li>Recipient of the Washington State Opportunity Scholarship (WSOS)</li>
-    </ul>
-  </div>
-  <div>
-    <p>Portfolio</p>
-    <p>
-      Feel free to <a href="/work">check out</a>
-      some of the projects that I've found fun to struggle with, learning, and
-      developing!
-    </p>
-  </div>
+<div id="education">
+  <p>Education</p>
+  <p>Eastern Washington University</p>
+  <p>
+    Bachelor's in Computer Science with a Minor in Cyber Security [DEC.2022]
+  </p>
+  <p>
+    Relevant Coursework: Object Oriented Programming, Data Structures,
+    Algorithms, Discrete Mathematics, .NET Programming, .NET Web Applications,
+    Operating Systems, C and Unix Programming,and Software Development
+    Principles.
+  </p>
+</div>
+<br />
+
+<div id="recognition">
+  <p>Special Recognitions</p>
+  <ul>
+    <li>
+      Graduated with Honors (cum laude) from Eastern Washington University
+    </li>
+    <li>Recipient of the Washington State Opportunity Scholarship (WSOS)</li>
+  </ul>
+</div>
+<div>
+  <p>Portfolio</p>
+  <p>
+    Feel free to <a href="/work">check out</a>
+    some of the projects that I've found fun to struggle with, learning, and
+    developing!
+  </p>
 </div>
