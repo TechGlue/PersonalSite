@@ -5,12 +5,25 @@
       <p>{{ temp }} ℉</p>
     }
     @for (routes of navBarRoutes; track routes) {
-      <a
-        class="nav-link hover:text-buttonHover"
-        routerLink=""
-        fragment="{{ routes.fragment }}"
-        >{{ routes.routeName }}</a
-      >
+      @if (routes.routeName === "Contact") {
+        <button
+          class="rounded-full bg-buttonPrimarySecondary border-textSecondary border-2 text-altText py-0.5 px-3 hover:bg-altButton hover:text-white hover:border-text-white"
+        >
+          <a
+            class="font-semibold nav-link"
+            routerLink=""
+            fragment="{{ routes.fragment }}"
+            >{{ routes.routeName }}</a
+          >
+        </button>
+      } @else {
+        <a
+          class="nav-link hover:text-buttonHover font-semibold mt-1"
+          routerLink=""
+          fragment="{{ routes.fragment }}"
+          >{{ routes.routeName }}</a
+        >
+      }
     }
   </div>
 </nav>
