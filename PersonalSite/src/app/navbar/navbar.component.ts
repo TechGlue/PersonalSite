@@ -36,6 +36,7 @@ export class NavbarComponent implements OnInit {
 
     this.weatherService.getWeather().subscribe({
       next: (weatherData) => {
+        console.log(weatherData);
         this.city = weatherData.name;
         this.temp = this.convertToFahrenheit(weatherData.main.temp);
       },

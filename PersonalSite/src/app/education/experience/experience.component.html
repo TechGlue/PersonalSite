@@ -1,6 +1,9 @@
-<div>
-  <p>{{ company }}</p>
-  <p>{{ position }}</p>
+<div class="bg-bgPrimary mt-5 mb-5">
+  <p class="text-textTitle font-bold text-2xl">{{ company }}</p>
+  <p class="text-textTitle italic text-md mb-2">{{ position }}</p>
   <p>{{ summary }}</p>
-  <p>{{ misc }}</p>
+  @if (misc != "") {
+    <br />
+    <p>{{ misc }}</p>
+  }
 </div>

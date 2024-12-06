@@ -1,5 +1,5 @@
-<div id="skills" class="space-y-4 mt-10 text-xl">
-  <p class="text-textSecondary text-4xl font-bold">The story so far...</p>
+<div id="skills" class="space-y-4 text-xl mt-10">
+  <p class="text-subTitles text-4xl font-bold">The story so far...</p>
   <p>
     I've worked with various languages and tools throughout my journey as a
     student and a developer. There are often times where I learn a language for
@@ -7,21 +7,24 @@
     these are the ones that I've enjoyed and continue to use today both
     personally and professionally.
   </p>
-  <ul>
-    <li>C#</li>
-    <li>.NET</li>
-    <li>Typescript</li>
-    <li>Angular</li>
-    <li>SQL</li>
-    <li>Docker</li>
-    <li>Bash</li>
-    <li>NeoVim/Vim Bindings</li>
-    <li>Rider</li>
-  </ul>
+  <div class="flex flex-col md:flex-row">
+    <ul class="list-disc text-md p-2 ml-6">
+      <li class="font-bold">C#</li>
+      <li class="font-bold">.NET</li>
+      <li>Typescript</li>
+      <li>Angular</li>
+    </ul>
+    <ul class="list-disc text-md p-2 ml-6">
+      <li class="font-bold">SQL</li>
+      <li>Docker</li>
+      <li>Bash</li>
+      <li class="font-bold">NeoVim/Vim Bindings</li>
+    </ul>
+  </div>
 </div>
 
-<div id="experience">
-  <p class="text-xl text-textSecondary font-bold">Experience</p>
+<div class="space-y-4 mt-5 text-xl" id="experience">
+  <p class="text-2xl text-textSecondary font-bold">Experience</p>
   <app-experience
     [company]="'Premera Blue Cross '"
     [position]="
@@ -48,7 +51,7 @@
       'Software Engineering Intern, Mountlake Terrace, WA [JUL. 2022 - SEP. 2022]'
     "
     [summary]="
-      'My initial introduction to writing professional code and working in a team environment was during my internship at Premera. I gained valuable experience in various areas, including shadowing developers and learning how they design and deliver code to make healthcare work better for the customer. I also gained insights into the health insurance business and frequently collaborated with internal Premera business analysts while adhering to Agile practices. By the end of the summer, I successfully delivered a full-stack internal web application for parsing enrollment filesand generating reports for the business to utilize.'
+      'My initial introduction to writing professional code and working in a team environment was during my internship at Premera. I gained valuable experience in various areas, including shadowing developers, learning how they design and deliver code to make healthcare work better for the customer. I also gained insights into the health insurance business and frequently collaborated with internal Premera business analysts while adhering to Agile practices. By the end of the summer, I successfully delivered a full-stack internal web application for parsing and processing enrollment files.'
     "
   />
 </div>

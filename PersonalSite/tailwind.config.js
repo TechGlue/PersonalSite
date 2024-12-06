@@ -18,6 +18,7 @@ module.exports = {
         altButton: "#4C658C",
         buttonHover: "#3a5681",
         iconsHover: "#3a5681",
+        subTitles: "#e8e2d8",
       },
       keyframes: {
         typing: {
