@@ -1,10 +1,15 @@
-<p>{{ title }}</p>
-@if (link !== "") {
-  <a href="{{ link }}">{{ link }}</a>
-}
-<p>{{ description }}</p>
-<ul>
-  @for (item of listOfTech; track item) {
-    <li>{{ item }}</li>
-  }
-</ul>
+<a href="{{ link }}">
+  <div class="hover:bg-workHover mt-10 rounded-lg p-4 bg-workBackground">
+    <p class="text-textTitle font-bold mb-2">
+      {{ title }}
+    </p>
+    <p class="mb-2">{{ description }}</p>
+    <div class="columns-8 gap-10">
+      @for (item of listOfTech; track item) {
+        <div class="flex bg-green-50">
+          {{ item }}
+        </div>
+      }
+    </div>
+  </div>
+</a>

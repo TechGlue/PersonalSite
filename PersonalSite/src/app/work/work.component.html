@@ -1,10 +1,10 @@
-<div>
-  <p class="text-textSecondary text-3xl font-bold">Projects</p>
+<div class="space-y-4 text-xl">
+  <p class="text-subTitles text-4xl font-bold">Projects</p>
   <app-workitem
     [title]="'CheckMeIn'"
     [link]="'https://github.com/TechGlue/CheckIn'"
     [description]="
-      'CheckMeIn is a personal .NET core project that I created to learn more about .NET Core, uncommon C# libraries and Azure. The project is simple in nature, as it is a check-in system for a variety of habits that I want to track for positive reinforcement. The project is hosted on Azure App Service, deployed through Github Actions, and uses Azure SQL for data storage. This is a sandbox project that will be continuously updated as I pick up new skills. '
+      'CheckMeIn is a personal .NET core project that I created to learn .NET Core, uncommon C# libraries and start making delivering to Azure a habit. The project is a check-in system for a variety of habits that I want to track for positive reinforcement. '
     "
     [listOfTech]="[
       '.NET Core',
@@ -17,23 +17,27 @@
       'EntraId',
     ]"
   />
-  <br />
 
   <app-workitem
     [title]="'Personal Website'"
-    [link]="'https://github.com/TechGlue/SupCommunity'"
+    [link]="'https://github.com/TechGlue/PersonalSite'"
     [description]="
-      'A personal website I\'ve been building and maintaining since 2020. The website has been my playground for learning everything frontend related. This current iteration is rocking Angular 18 and TailwindCSS for the styling. It\'s been a fun project to work on and plan to continue to update as new frameworks and libraries that interest me come out. '
+      'A personal website I\'ve been building and maintaining since 2020. The website has been my playground for learning everything frontend related. This current iteration is rocking Angular 19 but before that It went from vanilla HTML, HTML + CSS, and then React.'
     "
-    [listOfTech]="['Angular', 'TailwindCSS', 'TypeScript', 'HTML']"
+    [listOfTech]="[
+      'Angular',
+      'TailwindCSS',
+      'TypeScript',
+      'HTML',
+      'Jasmine & Karma Testing',
+    ]"
   />
 
-  <br />
   <app-workitem
     [title]="'SupCommunity'"
-    [link]="'https://github.com/TechGlue/SupCommunity'"
+    [link]="'https://github.com/TechGlue/GoSupCommunity'"
     [description]="
-      'Built a web scraper to fetch information from a site that I frequent for upcoming release info for one of my favorite clothing brands. A microservice that when pinged with a drop date will scrape all the items on the site and return the items in a consumable format.'
+      'Built a web scraper to fetch information from a site that I frequent for upcoming release info for one of my favorite clothing brands. A microservice that when pinged with a drop date will scrape all the items on the site and return the items in a consumable JSON format for a client to ingest.'
     "
     [listOfTech]="['Go', 'Docker']"
   />
