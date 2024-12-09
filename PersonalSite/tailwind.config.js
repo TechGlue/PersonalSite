@@ -41,11 +41,20 @@ module.exports = {
             borderColor: "white",
           },
         },
+        fadeIn: {
+          from: {
+            opacity: 0,
+          },
+          to: {
+            opacity: 1,
+          },
+        },
       },
       animation: {
         // the infinite in the alternate is what will make the cursor go back and forth
         //  removing it will create only one run
         typing: "typing 2s steps(20) alternate, blink .7s infinite",
+        fade: "fadeIn .5s ease-in-out",
       },
     },
   },

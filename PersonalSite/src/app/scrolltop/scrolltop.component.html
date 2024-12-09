@@ -1,5 +1,10 @@
 @if (scrollPosition) {
-  <div class="bg-red">
-    <button (click)="scrollToTop()">Click me to go back to Top</button>
+  <div class="text-sm animate-fade">
+    <button
+      class="bg-buttonPrimarySecondary hover:bg-altButton hover:text-white hover:border-text-white w-10 h-10 text-black font-bold rounded-full text-xl"
+      (click)="scrollToTop()"
+    >
+      ↑
+    </button>
   </div>
 }
