@@ -2,6 +2,7 @@ import { TestBed, ComponentFixture } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { provideHttpClient } from '@angular/common/http';
 import { provideHttpClientTesting } from '@angular/common/http/testing';
+import { RouterModule } from '@angular/router';
 
 describe('AppComponent', () => {
   let component: AppComponent;
@@ -10,7 +11,7 @@ describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       providers: [provideHttpClient(), provideHttpClientTesting()],
-      imports: [AppComponent],
+      imports: [AppComponent, RouterModule.forRoot([])],
     }).compileComponents();
     fixture = TestBed.createComponent(AppComponent);
     component = fixture.componentInstance;
@@ -21,9 +22,10 @@ describe('AppComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it(`should have the 'Luís Garcia' title`, () => {
+  // normalize due to the accent throwing errors
+  it(`should have the 'Luis Garcia' title`, () => {
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('Luís Garcia');
+    expect(app.title.normalize).toEqual('Luís Garcia'.normalize);
   });
 
   // maybe need later

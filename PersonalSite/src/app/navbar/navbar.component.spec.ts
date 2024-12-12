@@ -5,6 +5,7 @@ import { NavbarComponent } from './navbar.component';
 import { WeatherService } from './weather.service';
 import { Weather } from './weather';
 import { of } from 'rxjs';
+import { RouterModule } from '@angular/router';
 
 describe('NavbarComponent', () => {
   let component: NavbarComponent;
@@ -18,7 +19,7 @@ describe('NavbarComponent', () => {
         provideHttpClientTesting(),
         WeatherService,
       ],
-      imports: [NavbarComponent],
+      imports: [NavbarComponent, RouterModule.forRoot([])],
     }).compileComponents();
 
     weatherService = TestBed.inject(WeatherService);
@@ -47,6 +48,8 @@ describe('NavbarComponent', () => {
 
   it('should convert to fahrenheit', () => {
     expect(component.convertToFahrenheit(0)).toBe(32);
+    expect(component.convertToFahrenheit(3.9999999)).toBe(40);
+
     expect(component.convertToFahrenheit(10)).toBe(50);
   });
 
@@ -55,8 +58,8 @@ describe('NavbarComponent', () => {
 
     // Check if each link is rendered
     expect(compiled.querySelector('div')?.textContent).toContain('About');
-    expect(compiled.querySelector('div')?.textContent).toContain('Contact');
     expect(compiled.querySelector('div')?.textContent).toContain('Experience');
-    expect(compiled.querySelector('div')?.textContent).toContain('Work');
+    expect(compiled.querySelector('div')?.textContent).toContain('Projects');
+    expect(compiled.querySelector('div')?.textContent).toContain('Contact');
   });
 });

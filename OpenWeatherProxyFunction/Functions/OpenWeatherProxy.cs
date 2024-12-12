@@ -22,8 +22,7 @@ namespace OpenWeatherProxyFunction
             _logger.LogInformation("Calling OpenWeather API");
             Weather? result;
 
-            // todo: make this not a hardcoded value
-            string? openWeatherApiUrl = "";
+            string? openWeatherApiUrl = Environment.GetEnvironmentVariable("OpenWeatherAPIUrl");
 
             if (openWeatherApiUrl is null || openWeatherApiUrl.Equals(string.Empty))
             {
@@ -32,7 +31,6 @@ namespace OpenWeatherProxyFunction
 
             using (HttpClient httpClient = new HttpClient())
             {
-
                 WeatherProxyService weatherProxyService = new WeatherProxyService(httpClient, openWeatherApiUrl);
 
                 var val = await weatherProxyService.GetOpenWeatherData();

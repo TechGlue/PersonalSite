@@ -36,7 +36,6 @@ export class NavbarComponent implements OnInit {
 
     this.weatherService.getWeather().subscribe({
       next: (weatherData) => {
-        console.log(weatherData);
         this.city = weatherData.name;
         this.temp = this.convertToFahrenheit(weatherData.main.temp);
       },
@@ -49,8 +48,9 @@ export class NavbarComponent implements OnInit {
     }
   }
 
+  // run up the float
   convertToFahrenheit(celsius: number): number {
-    return (celsius * 9) / 5 + 32;
+    return Math.ceil((celsius * 9) / 5 + 32);
   }
 }
 

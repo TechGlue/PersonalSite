@@ -2,8 +2,8 @@
   <div class="flex flex-col gap-2 mb-12 justify-end md:flex-row">
     @if (temp !== 0 && city !== "") {
       <div>
-        <p class="mt-1 justify-start md:flex-row">{{ city }}, WA</p>
-        <p class="mt-1">{{ temp }} ℉</p>
+        <p class="mt-0 justify-start md:flex-row">{{ city }}, WA</p>
+        <p class="mt-0">{{ temp }} ℉</p>
       </div>
     }
     @for (routes of navBarRoutes; track routes) {
