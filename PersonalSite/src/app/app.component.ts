@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component } from '@angular/core';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SplashpageComponent } from './splashpage/splashpage.component';
 import { AboutComponent } from './about/about.component';
