@@ -28,12 +28,12 @@ jobs:
         cache: 'npm'
 
     # run a bash script to create a directory and env file
-    - name: Create env file
-      run: |
-        mkdir -p src/environments
-        echo "export const environment = { production: false,
-        apiurl: 'https://api.example.com',
-        };" >> ./src/environments/environment.ts
+    ## - name: Create env file
+    ##   run: |
+    ##     mkdir -p src/environments
+    ##     echo "export const environment = { production: false,
+    ##     apiurl: 'https://api.example.com',
+    ##     };" >> ./src/environments/environment.ts
     # install dependencies
     - run: npm install
     # will run linter and build
