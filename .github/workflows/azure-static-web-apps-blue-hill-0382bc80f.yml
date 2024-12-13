@@ -1,14 +1,13 @@
 name: PersonalSite Build and Deploy Workflow 
 
 on:
-  workflow_dispatch:
-  #push:
-  #  branches:
-  #    - rewrite
-  # pull_request:
-  #   types: [opened, synchronize, reopened, closed]
-  #   branches:
-  #     - rewrite
+  push:
+    branches:
+      - rewrite
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+    branches:
+      - rewrite
 
 jobs:
   run_testing: 
