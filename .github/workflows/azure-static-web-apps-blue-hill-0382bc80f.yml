@@ -10,12 +10,14 @@ on:
       - rewrite
 
 jobs:
-  run_testing: 
+  CI_Tests:
+    name: Run Angular Tests
     uses: TechGlue/PersonalSite/.github/workflows/node.js.yml@rewrite
-  build_and_deploy_job:
+  Build_And_Deploy_To_Azure:
+    needs: CI_Tests
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     runs-on: ubuntu-latest
-    name: Build and Deploy Job
+    name: Build and Deploy to Azure
     permissions:
        id-token: write
        contents: read
