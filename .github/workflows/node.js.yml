@@ -5,7 +5,7 @@ name: CI-PersonalWebsite
 
 on:
   workflow_call:
-  workflow_dispatch:
+
   
 jobs:
   build:
@@ -15,6 +15,7 @@ jobs:
       matrix:
         node-version: [22.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
     defaults:
           run:
             working-directory: ./PersonalSite # Set working directory for all steps
