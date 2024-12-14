@@ -1,0 +1,89 @@
+<div id="skills" class="space-y-4 text-xl mt-10">
+  <p class="text-subTitles text-4xl font-bold">The story so far...</p>
+  <p>
+    I worked with various languages and tools throughout my journey as a student
+    and a developer. There are often times where I learn a language for a
+    one-off project, coursework, or was influenced by developer hype... But
+    these are the ones that I've enjoyed and continue to use today both
+    personally and professionally.
+  </p>
+  <div class="flex flex-col md:flex-row">
+    <ul class="list-disc text-md ml-6 p-6 marker:text-bullets">
+      <li class="font-bold">C#</li>
+      <li class="font-bold">.NET</li>
+      <li>Typescript</li>
+      <li>Angular</li>
+    </ul>
+    <ul class="list-disc text-md ml-6 p-6 marker:text-bullets">
+      <li class="font-bold">SQL</li>
+      <li>Docker</li>
+      <li>Bash</li>
+      <li class="font-bold">NeoVim/Vim Bindings</li>
+    </ul>
+  </div>
+</div>
+
+<div class="mt-5 text-xl" id="experience">
+  <p class="text-2xl text-textSecondary font-bold">Experience</p>
+  <app-experience
+    [company]="'Premera Blue Cross '"
+    [position]="
+      'Software Engineer I, Mountlake Terrace, WA [Jan. 2023 - Aug. 2024]'
+    "
+    [summary]="
+      'Premera Blue Cross is a prominent blue cross blue shield insurance
+          company in the Pacific Northwest. As a full time developer, I got the
+          opportunity to work on business changes to back-end applications that
+          fulfilled crucial functions for the business, build developer tools to
+          streamline and standardized code deployments, and develop internal
+          desktop applications.'
+    "
+    [misc]="
+      'Further responsibilities included designing, writing documentation,
+          collaborating with the business and various teams at Premera, and
+          driving the daily developer standup.'
+    "
+  />
+
+  <app-experience
+    [company]="'Premera Blue Cross'"
+    [position]="
+      'Software Engineering Intern, Mountlake Terrace, WA [Jul. 2022 - Sep. 2022]'
+    "
+    [summary]="
+      'My initial introduction to writing professional code and working in a team environment was during my internship at Premera. I gained valuable experience in various areas, including shadowing developers, learning how they design and deliver code to make healthcare work better for the customer. I also gained insights into the health insurance bsiness and frequently collaborated with internal Premera business analysts while adhering to Agile practices. By the end of the summer, I successfully delivered a full-stack internal web application for parsing and processing enrollment files.'
+    "
+  />
+
+  <div id="education">
+    <p class="text-2xl text-textSecondary font-bold">Education</p>
+
+    <div class="mt-5">
+      <p class="text-textTitle font-bold text-2xl">
+        Eastern Washington University
+      </p>
+      <p class="text-textTitle italic text-md mb-2">
+        Bachelor's in Computer Science with a Minor in Cyber Security [DEC.2022]
+      </p>
+      <p>
+        <b>Relevant Coursework:</b> Object Oriented Programming, Data
+        Structures, Algorithms, Discrete Mathematics, .NET Programming, .NET Web
+        Applications, Operating Systems, C and Unix Programming,and Software
+        Development Principles.
+      </p>
+    </div>
+  </div>
+
+  <div id="recognition" class="mt-5">
+    <p class="text-2xl text-textSecondary font-bold">Special Recognitions</p>
+    <ul class="mb-2 p-6 ml-6 list-disc marker:text-bullets">
+      <li>
+        Graduated with Honors (cum laude) from Eastern Washington University
+      </li>
+      <li>
+        Recipient and alumni of the Washington State Opportunity Scholarship
+        (WSOS)
+      </li>
+    </ul>
+  </div>
+</div>

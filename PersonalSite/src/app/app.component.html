@@ -1,0 +1,21 @@
+<div class="bg-bgPrimary font-inter">
+  <!-- Add this styling to the class in main to enable debugger for responsive layouts: debug-screens -->
+  <main
+    class="mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-16 grid grid-cols-2 text-textPrimary"
+  >
+    <app-navbar class="col-span-2" />
+    <div class="col-span-2 lg:py-24">
+      <app-splashpage class="h-full" />
+      <section class="pt-16 mb-16 scroll-mt-16">
+        <app-about id="About" />
+        <app-education id="Experience" />
+        <app-work id="Projects" />
+      </section>
+
+      <app-contact id="Contact" />
+    </div>
+    <div class="fixed bottom-0 right-0 flex m-2">
+      <app-scrolltop />
+    </div>
+  </main>
+</div>

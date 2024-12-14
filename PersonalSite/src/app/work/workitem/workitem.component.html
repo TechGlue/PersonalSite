@@ -1,0 +1,21 @@
+<a href="{{ link }}">
+  <div
+    class="text-textTitle hover:bg-workHover hover:text-subTitles mt-10 rounded-lg p-4 bg-workBackground"
+  >
+    <p class="font-bold mb-2">
+      {{ title }}
+    </p>
+    <p class="mb-2 text-textPrimary text-md">{{ description }}</p>
+    <ul class="flex flex-wrap text-subTitles">
+      @for (item of listOfTech; track item) {
+        <li>
+          <div
+            class="bg-iconsHover rounded-lg items-center px-3 py-1 text-sm mr-2 mt-2 lg:mr-2"
+          >
+            {{ item }}
+          </div>
+        </li>
+      }
+    </ul>
+  </div>
+</a>

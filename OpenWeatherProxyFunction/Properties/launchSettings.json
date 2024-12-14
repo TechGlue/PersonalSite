@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "OpenWeatherProxyFunction": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7187",
+      "launchBrowser": false
+    }
+  }
+}

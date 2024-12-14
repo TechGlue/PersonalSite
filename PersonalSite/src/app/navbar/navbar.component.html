@@ -1,0 +1,33 @@
+<nav class="m-1">
+  <div class="flex flex-col gap-2 mb-12 justify-end md:flex-row">
+    @if (temp !== 0 && city !== "") {
+      <div>
+        <p class="mt-0 justify-start md:flex-row">{{ city }}, WA</p>
+        <p class="mt-0">{{ temp }} ℉</p>
+      </div>
+    }
+    @for (routes of navBarRoutes; track routes) {
+      <div>
+        @if (routes.routeName === "Contact") {
+          <button
+            class="rounded-full bg-buttonPrimarySecondary border-textSecondary border-2 text-altText px-3 hover:bg-altButton hover:text-white hover:border-text-white"
+          >
+            <a
+              class="font-semibold nav-link"
+              routerLink=""
+              fragment="{{ routes.fragment }}"
+              >{{ routes.routeName }}</a
+            >
+          </button>
+        } @else {
+          <a
+            class="nav-link hover:text-buttonHover font-semibold"
+            routerLink=""
+            fragment="{{ routes.fragment }}"
+            >{{ routes.routeName }}</a
+          >
+        }
+      </div>
+    }
+  </div>
+</nav>

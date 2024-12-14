@@ -1,0 +1,44 @@
+<div class="space-y-4 text-xl">
+  <p class="text-subTitles text-4xl font-bold">Projects</p>
+  <app-workitem
+    [title]="'CheckMeIn'"
+    [link]="'https://github.com/TechGlue/CheckIn'"
+    [description]="
+      'CheckMeIn is a .NET core project that I created to learn .NET Core, new to me C# libraries, and start making delivering to Azure a habit. The project is a check-in system for a variety of habits that I want to track for positive reinforcement. '
+    "
+    [listOfTech]="[
+      '.NET Core',
+      'C#',
+      'Azure',
+      'Azure SQL',
+      'Github Actions CI/CD',
+      'Docker',
+      'Test Containers',
+      'EntraId',
+    ]"
+  />
+
+  <app-workitem
+    [title]="'Personal Website'"
+    [link]="'https://github.com/TechGlue/PersonalSite'"
+    [description]="
+      'A personal website I\'ve been building and maintaining since 2020. The website has been my playground for learning everything frontend related. This current iteration is rocking Angular 19 but before that It went from vanilla HTML, HTML + CSS, and       lastly React.'
+    "
+    [listOfTech]="[
+      'Angular',
+      'TailwindCSS',
+      'TypeScript',
+      'HTML',
+      'Jasmine + Karma Testing',
+    ]"
+  />
+
+  <app-workitem
+    [title]="'SupCommunity'"
+    [link]="'https://github.com/TechGlue/GoSupCommunity'"
+    [description]="
+      'Built a web scraper to fetch information from a site that I frequent for upcoming release info for one of my favorite clothing brands. A microservice that when pinged with a drop date will scrape all the items on the site and return the items in a consumable JSON format for a client to ingest.'
+    "
+    [listOfTech]="['Go', 'Docker']"
+  />
+</div>

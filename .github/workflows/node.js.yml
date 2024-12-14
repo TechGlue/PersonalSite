@@ -4,7 +4,8 @@
 name: CI-PersonalWebsite
 
 on:
-  workflow_dispatch:
+  workflow_call:
+
   
 jobs:
   build:
@@ -15,6 +16,10 @@ jobs:
         node-version: [22.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
+    defaults:
+          run:
+            working-directory: ./PersonalSite # Set working directory for all steps
+
     steps:
     - uses: actions/checkout@v4
     - name: Use Node.js ${{ matrix.node-version }}
@@ -22,7 +27,17 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+
+    # run a bash script to create a directory and env file
+    ## - name: Create env file
+    ##   run: |
+    ##     mkdir -p src/environments
+    ##     echo "export const environment = { production: false,
+    ##     apiurl: 'https://api.example.com',
+    ##     };" >> ./src/environments/environment.ts
+    # install dependencies
+    - run: npm install
     # will run linter and build
     - run: npm run build --if-present
     # will run headless jasmine testing
-    - run: npm test
+    - run: npm run test-ci
