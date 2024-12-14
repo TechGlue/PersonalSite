@@ -3,11 +3,8 @@ name: PersonalSite Build and Deploy Workflow
 on:
   push:
     branches:
-      - rewrite
-  pull_request:
-    types: [opened, synchronize, reopened, closed]
-    branches:
-      - rewrite
+      - master
+ 
 
 jobs:
   CI_Tests:
