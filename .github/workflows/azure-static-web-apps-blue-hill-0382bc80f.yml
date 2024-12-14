@@ -36,12 +36,9 @@ jobs:
                const coredemo = require('@actions/core')
                return await coredemo.getIDToken()
            result-encoding: string
-      - name: Create env file
+      - name: Inject API_URL into environment.ts
         run: |
-          mkdir -p src/environments
-          echo "export const environment = { production: false,
-          apiurl: '${{ secrets.API_URL }}',
-          };" >> ./src/environments/environment.ts
+          sed -i "s#apiurl: ''#apiurl: '${{ secrets.API_URL }}'#g" src/environments/environment.ts
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
