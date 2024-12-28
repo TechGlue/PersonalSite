@@ -9,7 +9,7 @@ on:
 jobs:
   CI_Tests:
     name: Run Angular Tests
-    uses: TechGlue/PersonalSite/.github/workflows/node.js.yml@rewrite
+    uses: TechGlue/PersonalSite/.github/workflows/node.js.yml@master
   Build_And_Deploy_To_Azure:
     needs: CI_Tests
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
