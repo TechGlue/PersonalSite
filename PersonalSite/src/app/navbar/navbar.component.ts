@@ -19,11 +19,6 @@ export class NavbarComponent implements OnInit {
 
   navBarRoutes: NavBarRoutes[] = [
     { routeName: 'About', routePath: '/about', fragment: 'About' },
-    {
-      routeName: 'Experience',
-      routePath: '/education',
-      fragment: 'Experience',
-    },
     { routeName: 'Projects', routePath: '/work', fragment: 'Projects' },
     { routeName: 'Contact', routePath: '/contact', fragment: 'Contact' },
   ];
