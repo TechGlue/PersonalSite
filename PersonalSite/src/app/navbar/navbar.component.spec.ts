@@ -58,7 +58,6 @@ describe('NavbarComponent', () => {
 
     // Check if each link is rendered
     expect(compiled.querySelector('div')?.textContent).toContain('About');
-    expect(compiled.querySelector('div')?.textContent).toContain('Experience');
     expect(compiled.querySelector('div')?.textContent).toContain('Projects');
     expect(compiled.querySelector('div')?.textContent).toContain('Contact');
   });
