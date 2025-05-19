@@ -1,5 +1,15 @@
+<div class="md:hidden" id="burger-menu-button">
+  <!-- Burger menu button -->
+  <button (click)="toggleNav()">
+    <i class="fa fa-bars text-4xl" aria-hidden="true"></i>
+  </button>
+</div>
+
 <nav class="m-1">
-  <div class="flex flex-col gap-2 mb-12 justify-end md:flex-row">
+  <div
+    class="hidden md:flex md:gap-2 md:mb-12 md:justify-end md:flex-row"
+    id="nav-elements"
+  >
     @if (temp !== 0 && city !== "") {
       <div>
         <p class="mt-0 justify-start md:flex-row">{{ city }}, WA</p>
@@ -10,7 +20,7 @@
       <div>
         @if (routes.routeName === "Contact") {
           <button
-            class="rounded-full bg-buttonPrimarySecondary border-textSecondary border-2 text-altText px-3 hover:bg-altButton hover:text-white hover:border-text-white"
+            class="hover:text-buttonHover md:rounded-full md:bg-buttonPrimarySecondary md:border-textSecondary md:border-2 md:text-altText md:px-3 md:hover:bg-altButton md:hover:text-white md:hover:border-text-white"
           >
             <a
               class="font-semibold nav-link"

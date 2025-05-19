@@ -37,13 +37,15 @@ describe('NavbarComponent', () => {
     weatherService = fixture.debugElement.injector.get(WeatherService);
 
     fixture.detectChanges();
+
     const compiled = fixture.nativeElement as HTMLElement;
 
     expect(component).toBeTruthy();
     expect(component.city).toEqual('Portland');
     expect(component.temp).toEqual(86);
-    expect(compiled.querySelector('div')?.textContent).toContain('Portland');
-    expect(compiled.querySelector('div')?.textContent).toContain('86');
+
+    expect(compiled.querySelector('nav')?.textContent).toContain('Portland');
+    expect(compiled.querySelector('nav')?.textContent).toContain('86');
   });
 
   it('should convert to fahrenheit', () => {
@@ -57,8 +59,8 @@ describe('NavbarComponent', () => {
     const compiled = fixture.nativeElement as HTMLElement;
 
     // Check if each link is rendered
-    expect(compiled.querySelector('div')?.textContent).toContain('About');
-    expect(compiled.querySelector('div')?.textContent).toContain('Projects');
-    expect(compiled.querySelector('div')?.textContent).toContain('Contact');
+    expect(compiled.querySelector('nav')?.textContent).toContain('About');
+    expect(compiled.querySelector('nav')?.textContent).toContain('Projects');
+    expect(compiled.querySelector('nav')?.textContent).toContain('Contact');
   });
 });

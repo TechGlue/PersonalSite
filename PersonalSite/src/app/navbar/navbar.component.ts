@@ -43,6 +43,11 @@ export class NavbarComponent implements OnInit {
     }
   }
 
+  toggleNav() {
+    const navItem = document.getElementById('nav-elements');
+    navItem?.classList.toggle('hidden');
+  }
+
   // run up the float
   convertToFahrenheit(celsius: number): number {
     return Math.ceil((celsius * 9) / 5 + 32);
