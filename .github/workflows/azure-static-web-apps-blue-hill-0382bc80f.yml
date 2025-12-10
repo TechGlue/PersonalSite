@@ -1,6 +1,7 @@
 name: PersonalSite Build and Deploy Workflow 
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - master
@@ -60,3 +61,4 @@ jobs:
           #       uses: Azure/static-web-apps-deploy@v1
           #       with:
           #         action: "close"
+
